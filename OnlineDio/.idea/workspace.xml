@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidDesignerProfile">
+    <option name="fullProfile">
+      <profile>
+        <option name="device" value="3.3in WQVGA" />
+        <option name="deviceConfiguration" value="Portrait" />
+        <option name="targetHashString" value="android-18" />
+        <option name="theme" value="AppTheme" />
+      </profile>
+    </option>
+    <option name="selection" value="[Full]" />
+  </component>
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState>
+        <option name="device" value="2.7in QVGA" />
+        <option name="dockMode" value="" />
+        <option name="nightMode" value="notnight" />
+        <option name="targetHashString" value="android-18" />
+        <option name="theme" value="Theme" />
+        <option name="visible" value="false" />
+      </GlobalState>
+    </option>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="03a71fb1-6ed9-4ee5-985e-409887dd835e" name="Default" comment="" />
+    <list id="6b9a0844-5eac-4903-8f82-5f888c8f04b4" name="New changelist" comment="" />
+    <ignored path="OnlineDio.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/fragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383703798837" ignored="false" />
+    <file path="/Dummy.txt" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383708350913" ignored="false" />
+    <file path="/MyActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382407210732" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383704777723" ignored="false" />
+    <file path="/a.dummy" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383642186873" ignored="false" />
+    <file path="/navigation.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382351429893" ignored="false" />
+    <file path="/NavigationActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383575964698" ignored="false" />
+    <file path="/FavoriteFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381745729858" ignored="false" />
+    <file path="/HomeActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382288674505" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/src/com/example/NavigationDemo/MyActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740825134" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/build.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381737566057" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/values/strings.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381737566057" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/layout/main.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740299908" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/AndroidManifest.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381799114082" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/layout/R.layout.drawer_list_item.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381738011674" ignored="false" />
+    <file path="/R.layout.drawer_list_item.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381737999209" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/gen/com/example/NavigationDemo/BuildConfig.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381799127876" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/layout/fragment_one.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740330607" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/layout/fragment_two.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740350117" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/layout/fragment_three.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740373553" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/src/com/example/NavigationDemo/FragmentOne.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740500631" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/src/com/example/NavigationDemo/FragmentTwo.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740522111" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/src/com/example/NavigationDemo/FragmentThree.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740536831" ignored="false" />
+    <file path="/ListViewCustomer.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381745357189" ignored="false" />
+    <file path="/ListNavigationAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381890907888" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ABSSideMenuTutorial/ABS/test/com/actionbarsherlock/internal/ManifestParsingTest.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381747029323" ignored="false" />
+    <file path="/MenuItemAssert.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381751710411" ignored="false" />
+    <file path="/login.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381764094361" ignored="false" />
+    <file path="/home.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382079303080" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/src/com/example/NavigationDemo/ACtionDrawerBasic.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381767622456" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/src/com/example/NavigationDemo/ActionDrawerBasic.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381774123189" ignored="false" />
+    <file path="/ActionDrawerBasic.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381774120229" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/layout/action_drawer.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381770783337" ignored="false" />
+    <file path="/action_drawer.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381770776303" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/res/layout/drawer_basic.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381770040340" ignored="false" />
+    <file path="/drawer_basic.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381770039188" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/gen/com/example/NavigationDemo/Manifest.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381799116111" ignored="false" />
+    <file path="$PROJECT_DIR$/../../NavigationDemo/project.properties" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381773362613" ignored="false" />
+    <file path="/strings.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381975631106" ignored="false" />
+    <file path="/LauchActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383574367148" ignored="false" />
+    <file path="/custom_navigation_edtsearch.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381811957348" ignored="false" />
+    <file path="/HomeFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383645982430" ignored="false" />
+    <file path="/ListViewCustomerAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383637853267" ignored="false" />
+    <file path="/test.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381830926814" ignored="false" />
+    <file path="/login2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381856221298" ignored="false" />
+    <file path="/LoginActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383573766548" ignored="false" />
+    <file path="/navigation_layout_row.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381889725021" ignored="false" />
+    <file path="/content_layout.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382368857076" ignored="false" />
+    <file path="/home_row_of_listview_2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381908516018" ignored="false" />
+    <file path="/ContentFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382348751656" ignored="false" />
+    <file path="/thumbnail_fragment.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381973530466" ignored="false" />
+    <file path="/ThumbnailFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381973624529" ignored="false" />
+    <file path="/content_custom_radiobutton_thumbnail.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381977341942" ignored="false" />
+    <file path="/DetailFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381979211090" ignored="false" />
+    <file path="/ComentFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381979276701" ignored="false" />
+    <file path="/content_seekbar_progress.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381984432508" ignored="false" />
+    <file path="/content_seekbar_progress_bg_vollume.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381991939145" ignored="false" />
+    <file path="/content_seekbar_progress_vollume.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381991949244" ignored="false" />
+    <file path="/CommentFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382348358788" ignored="false" />
+    <file path="/content_custom_butonfavorite.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382002068212" ignored="false" />
+    <file path="/content_custom_buttonlike.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382002146943" ignored="false" />
+    <file path="/content_custom_buttonfacebook.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382003047964" ignored="false" />
+    <file path="/RoundedImageView.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382063147135" ignored="false" />
+    <file path="/lauch_custom_buttonloginnormal.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382005760160" ignored="false" />
+    <file path="/lauch_custom_buttonsign.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382005940192" ignored="false" />
+    <file path="/Profile.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382006619229" ignored="false" />
+    <file path="/content_custom_buttonplay.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382025761920" ignored="false" />
+    <file path="/profile3.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382030348710" ignored="false" />
+    <file path="/Profile2.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382030622227" ignored="false" />
+    <file path="/detail_fragment.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382032504213" ignored="false" />
+    <file path="/ImageUtilities.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382059347659" ignored="false" />
+    <file path="$USER_HOME$/Downloads/TestCropImage/AndroidManifest.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382059480574" ignored="false" />
+    <file path="$USER_HOME$/Downloads/TestCropImage/res/values/strings.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382059480574" ignored="false" />
+    <file path="$USER_HOME$/Downloads/TestCropImage/src/com/example/TestCropImage/MyActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382059481106" ignored="false" />
+    <file path="$USER_HOME$/Downloads/TestCropImage/res/layout/main.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382059481106" ignored="false" />
+    <file path="$USER_HOME$/Downloads/TestCropImage/build.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382059481106" ignored="false" />
+    <file path="$USER_HOME$/Downloads/TestCropImage/.idea/workspace.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382064352853" ignored="false" />
+    <file path="/content_custom_avatarimage.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382064112900" ignored="false" />
+    <file path="/home_row_of_listview.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382072511551" ignored="false" />
+    <file path="/home_row_of_listview2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382077981281" ignored="false" />
+    <file path="/home_custom_btnslidebar.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382080135161" ignored="false" />
+    <file path="/home_custom_btnnotification.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382080365434" ignored="false" />
+    <file path="/lauch_customer_loginfb.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382081781258" ignored="false" />
+    <file path="/common_custom_btnback.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382082227508" ignored="false" />
+    <file path="/comment_row_custom.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382325789100" ignored="false" />
+    <file path="/ListCommentAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382324787669" ignored="false" />
+    <file path="/CommentDTO.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382324353459" ignored="false" />
+    <file path="/comment_fragment.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382091412067" ignored="false" />
+    <file path="/home_custom_btoption.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382292606683" ignored="false" />
+    <file path="/custom_button_done.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382318612414" ignored="false" />
+    <file path="/CircularImageView.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382328256888" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SeekbarExample_volumn/gen/com/example/SeekbarExample_volumn/Manifest.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382337926928" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SeekbarExample_volumn/gen/com/example/SeekbarExample_volumn/R.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382337926928" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SeekbarExample_volumn/gen/com/example/SeekbarExample_volumn/BuildConfig.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382337999901" ignored="false" />
+    <file path="/CommentPostActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382347498249" ignored="false" />
+    <file path="/comment_post_layout.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382346212459" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/res/values/strings.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382403346800" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/AndroidManifest.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382405059001" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/src/com/example/sqplitedatabase/MyActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382403346800" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/res/layout/main.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404828667" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/build.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382403346800" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/src/com/example/sqplitedatabase/MySQLiteHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382405471193" ignored="false" />
+    <file path="/MySQLiteHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404005397" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/src/com/example/sqplitedatabase/Coment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404078051" ignored="false" />
+    <file path="/Coment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404068494" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/src/com/example/sqplitedatabase/CommentsDataSource.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404396398" ignored="false" />
+    <file path="/CommentsDataSource.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404369195" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/src/com/example/sqplitedatabase/Comment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404382745" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/src/com/example/sqplitedatabase/MainActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382405004686" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/gen/com/example/sqplitedatabase/R.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382405083607" ignored="false" />
+    <file path="/MainActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382405000861" ignored="false" />
+    <file path="/main.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382404824376" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sqplitedatabase/gen/com/example/sqplitedatabase/BuildConfig.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382405115715" ignored="false" />
+    <file path="$PROJECT_DIR$/../sqplitedatabase/gen/com/example/sqplitedatabase/BuildConfig.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382406368765" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SHAREDPREFERENCE/AndroidManifest.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382406392226" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SHAREDPREFERENCE/src/com/example/SHAREDPREFERENCE/MyActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382407211563" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SHAREDPREFERENCE/res/layout/main.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382406473962" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SHAREDPREFERENCE/build.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382406392226" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SHAREDPREFERENCE/res/values/strings.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382406392226" ignored="false" />
+    <file path="$USER_HOME$/Desktop/SHAREDPREFERENCE/.idea/workspace.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382407557938" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Tai lieu/OnlineDio/src/com/example/OnlineDio/fragment/HomeFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383571156516" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Tai lieu/OnlineDio/src/com/example/OnlineDio/authenticator/syncadapter/OnlineDioHomeFeedContract.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383571261772" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Tai lieu/OnlineDio/res/xml/syncadapter.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383571271249" ignored="false" />
+    <file path="/OnlineDioAuthenticator.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383572269233" ignored="false" />
+    <file path="/OnlineDioAccountGeneral.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383571889996" ignored="false" />
+    <file path="/OnlineDioParseServer.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383634985597" ignored="false" />
+    <file path="/User.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383572069837" ignored="false" />
+    <file path="/OnlineDioServerAuthenticate.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383572254578" ignored="false" />
+    <file path="/OnlineDioAuthenticatorService.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383572946005" ignored="false" />
+    <file path="$PROJECT_DIR$/../../SyncAdapter-master/src/com/udinic/sync_adapter_example/authentication/AuthenticatorActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383573325901" ignored="false" />
+    <file path="$PROJECT_DIR$/../../SyncAdapter-master/SyncAdapterExample/res/xml/sync_adapter.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383574670373" ignored="false" />
+    <file path="/HomeFeedDbHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383574800485" ignored="false" />
+    <file path="/HomeFeedProvider.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383646663819" ignored="false" />
+    <file path="/HomeFeedSynAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383648040987" ignored="false" />
+    <file path="/ParseHomeFeedInServer.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383703972238" ignored="false" />
+    <file path="/HomeFeedSynService.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383575152542" ignored="false" />
+    <file path="/GetAgainToken.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383615328302" ignored="false" />
+    <file path="/ProfileFeedModel.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383705295412" ignored="false" />
+    <file path="/sync_adapter.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383646302958" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../BasicSyncAdapter/src/com/example/android/network/sync/basicsyncadapter/EntryListFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383639081066" ignored="false" />
+    <file path="/EntryListFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383639079190" ignored="false" />
+    <file path="/SyncUtils.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383641669910" ignored="false" />
+    <file path="/ProfileFeedDbHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383701333069" ignored="false" />
+    <file path="/DbHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383707769160" ignored="false" />
+    <file path="/ParseComServerAccessor.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383704029475" ignored="false" />
+    <file path="$PROJECT_DIR$/src/com/example/OnlineDio/util/ListViewCustomerAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383704948972" ignored="false" />
+    <file path="/ProfileFeedContract.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383705695106" ignored="false" />
+    <file path="/ProviderContract.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383706006678" ignored="false" />
+    <file path="/ParseProfileFeedInserver.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383706426008" ignored="false" />
+    <file path="/OnlineDioLinkUrl.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383706355626" ignored="false" />
+    <file path="/ContentProvider.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383708336773" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/example/OnlineDio/BuildConfig.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383708591045" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="OnlineDio" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="HomeFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/fragment/HomeFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="0" selection-start="3336" selection-end="3796" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeFeedSynAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="21" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#9463#9464#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProviderContract.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ProviderContract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="48" selection-start="306" selection-end="323" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/DbHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="56" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeFeedSynService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="5" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParseProfileFeedInserver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseProfileFeedInserver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="8" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#985#1003#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileFeedModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="23" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContentProvider.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ContentProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="218" column="124" selection-start="8295" selection-end="8295" vertical-scroll-proportion="0.40234375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParseHomeFeedInServer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/ParseHomeFeedInServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="85" selection-start="729" selection-end="806" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/utilities/SyncUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseHomeFeedInServer.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ParseComServerAccessor.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ParseHomeFeedInServer.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/HomeFeedContract.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedProvider.java" />
+        <option value="$PROJECT_DIR$/res/xml/sync_adapter.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/OnlineDioLinkUrl.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/utilities/LoadDataFromServer.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseProfileFeedInserver.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedContract.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/DbHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ProviderContract.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ContentProvider.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="syncadapter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="syncadapter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="syncadapter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="132" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="160" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="154" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="162" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="829" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="836" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="154" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="153" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="trung" />
+    <property name="AndroidTargetDevices" value="192.168.56.101:5555" />
+    <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.OnlineDio.syncadapter" />
+      <recent name="com.example.OnlineDio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Android\Android Qsoft\OnlineDio\trunk\OnlineDio\src\com\example\OnlineDio\syncadapter\home" />
+      <recent name="F:\Android\Android Qsoft\OnlineDio\trunk\OnlineDio\res\xml" />
+      <recent name="F:\Android\Android Qsoft\OnlineDio\trunk\OnlineDio\src\com\example\OnlineDio\auth" />
+      <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\res\layout-lanscape" />
+      <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\res\music" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\res\values" />
+      <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\src\com\example\OnlineDio" />
+      <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\src\com\example\OnlineDio\Adapter" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.OnlineDio" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android Application.OnlineDio">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="OnlineDio" />
+      <option name="ACTIVITY_CLASS" value="com.example.OnlineDio.activity.LauchActivity" />
+      <option name="MODE" value="specific_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="OnlineDio" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="OnlineDio" />
+      <option name="ACTIVITY_CLASS" value="com.example.OnlineDio.activity.LauchActivity" />
+      <option name="MODE" value="specific_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android Application.OnlineDio" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\Trung\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03a71fb1-6ed9-4ee5-985e-409887dd835e" name="Default" comment="" />
+      <changelist id="6b9a0844-5eac-4903-8f82-5f888c8f04b4" name="New changelist" comment="" />
+      <created>1381477730924</created>
+      <updated>1381477730924</updated>
+    </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1381733896385</created>
+      <updated>1381733896385</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1381745846785</created>
+      <updated>1381745846785</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <created>1381767010729</created>
+      <updated>1381767010729</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <created>1381808618321</created>
+      <updated>1381808618321</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1381833239416</created>
+      <updated>1381833239416</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <created>1381885629150</created>
+      <updated>1381885629150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update">
+      <created>1381891891997</created>
+      <updated>1381891891997</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <created>1381893275550</created>
+      <updated>1381893275550</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <created>1381893766141</created>
+      <updated>1381893766141</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <created>1381906663595</created>
+      <updated>1381906663595</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1381920019066</created>
+      <updated>1381920019066</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1381920226460</created>
+      <updated>1381920226460</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update">
+      <created>1381920926097</created>
+      <updated>1381920926097</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update">
+      <created>1381999490575</created>
+      <updated>1381999490575</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update">
+      <created>1382058987694</created>
+      <updated>1382058987694</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update">
+      <created>1382059300592</created>
+      <updated>1382059300592</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update">
+      <created>1382067642386</created>
+      <updated>1382067642386</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update">
+      <created>1382068062526</created>
+      <updated>1382068062526</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update">
+      <created>1382082822768</created>
+      <updated>1382082822768</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update">
+      <created>1382318306200</created>
+      <updated>1382318306200</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update">
+      <created>1382319464604</created>
+      <updated>1382319464604</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update">
+      <created>1382326261219</created>
+      <updated>1382326261219</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update">
+      <created>1382326396519</created>
+      <updated>1382326396519</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update">
+      <created>1382341153830</created>
+      <updated>1382341153830</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update">
+      <created>1382343541918</created>
+      <updated>1382343541918</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update">
+      <created>1383636411422</created>
+      <updated>1383636411422</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update">
+      <created>1383708370508</created>
+      <updated>1383708370508</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Sonar" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.002283105" sideWeight="0.6729452" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35958904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32020548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43493152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5650685" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28939393" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42636988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.106818184" sideWeight="0.72431505" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27575758" sideWeight="0.72431505" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.6729452" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="64" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/authenticator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/sync_adapter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="60" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="67" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/OnlineDioLinkUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="116" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/utilities/LoadDataFromServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="27" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="23" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseProfileFeedInserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#985#1003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/fragment/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="3336" selection-end="3796" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="21" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#9463#9464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/ParseHomeFeedInServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="85" selection-start="729" selection-end="806" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../adt-bundle-windows-x86_64-20130917/sdk/sources/android-18/android/content/UriMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="16" selection-start="5808" selection-end="5808" vertical-scroll-proportion="7.9407897">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/DbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="56" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ProviderContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="48" selection-start="306" selection-end="323" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ContentProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="218" column="124" selection-start="8295" selection-end="8295" vertical-scroll-proportion="0.40234375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>grails-1.3.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>OnlineDio</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>android-support-v4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
