@@ -27,9 +27,6 @@ import com.example.OnlineDio.syncadapter.DbHelper;
 import com.example.OnlineDio.syncadapter.ProviderContract;
 import com.example.OnlineDio.util.ListViewCustomerAdapter;
 
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
-
 /**
  * Created with IntelliJ IDEA.
  * User: Trung
@@ -46,7 +43,6 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     private AccountManager accountManager;
     private SimpleCursorAdapter mAdapter;
     private ImageButton home_ibNotify;
-    public static final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<Runnable>();
     String[] PROJECTION = new String[]
             {
                     DbHelper.HOMEFEED_COL_ID,
@@ -65,7 +61,7 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
                     DbHelper.HOMEFEED_COL_USERNAME,
                     DbHelper.HOMEFEED_COL_DISPLAY_NAME,
                     DbHelper.HOMEFEED_COL_AVATAR
-            };
+            } ;
     String[] FROM_COLUMS = new String[]{
             DbHelper.HOMEFEED_COL_TITLE,
             DbHelper.HOMEFEED_COL_DISPLAY_NAME,
@@ -85,7 +81,7 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     public void onAttach(Activity activity)
     {
         super.onAttach(activity);
-        syncAdapter();
+//        syncAdapter();
     }
 
     private void syncAdapter()
@@ -104,10 +100,11 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.home, container, false);
+        syncAdapter();
         lisView = (ListView) view.findViewById(R.id.lvListSongs);
         home_ibOption = (ImageButton) view.findViewById(R.id.ibOption);
         layoutDrawer = (LinearLayout) getActivity().findViewById(R.id.left_drawer);
-        home_ibNotify = (ImageButton) view.findViewById(R.id.ibDone);
+        home_ibNotify = (ImageButton)view.findViewById(R.id.ibDone);
         home_ibNotify.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -120,7 +117,7 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         mAdapter = new ListViewCustomerAdapter(getActivity(), R.layout.home_row_of_listview2,
                 cur, FROM_COLUMS, new int[]{R.id.tvTitleOfSong, R.id.tvNameOfDirector,
                 R.id.tvNumberOfComment, R.id.tvNumberOfLiked,
-                R.id.tvNumberOfPostedDay, R.id.ivAvatars}, 0);
+                R.id.tvNumberOfPostedDay,R.id.ivAvatars},0);
         mAdapter.setViewBinder(new SimpleCursorAdapter.ViewBinder()
         {
             @Override
@@ -166,11 +163,9 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
     }
 
     @Override
-    public void onPause()
-    {
+    public void onPause() {
         super.onPause();
-        if (mSyncObserverHandle != null)
-        {
+        if (mSyncObserverHandle != null) {
             ContentResolver.removeStatusChangeListener(mSyncObserverHandle);
             mSyncObserverHandle = null;
         }
