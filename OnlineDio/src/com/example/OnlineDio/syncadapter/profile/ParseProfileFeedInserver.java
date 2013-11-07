@@ -3,12 +3,8 @@ package com.example.OnlineDio.syncadapter.profile;
 import com.example.OnlineDio.OnlineDioLinkUrl;
 import com.example.OnlineDio.utilities.LoadDataFromServer;
 import com.google.gson.Gson;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,17 +15,14 @@ import java.util.List;
  */
 public class ParseProfileFeedInserver
 {
-    public List<ProfileFeedModel> getHomeFeed(final String accessToken, Long id) throws JSONException
+    public ProfileFeedModel getHomeFeed(final String accessToken, String id) throws JSONException
     {
         String url = OnlineDioLinkUrl.URL_PROFILE_FEED + "?access_token=" + accessToken + "&id=" + id;
         String result = LoadDataFromServer.loadDataWithGetMethod(url);
         JSONObject jsonObject = new JSONObject(result);
-        JSONArray jsonData = (JSONArray) jsonObject.get("data");
-        List<ProfileFeedModel> homeFeedDTOList = new ArrayList<ProfileFeedModel>();
-        for (int i = 0; i < jsonData.length(); i++)
-        {
-            homeFeedDTOList.add(new Gson().fromJson(jsonData.getString(i), ProfileFeedModel.class));
-        }
-        return homeFeedDTOList;
+        String jsonData = jsonObject.get("data").toString();
+        ProfileFeedModel profileFeedModel = new ProfileFeedModel();
+        profileFeedModel = new Gson().fromJson(jsonData, ProfileFeedModel.class);
+        return profileFeedModel;
     }
 }

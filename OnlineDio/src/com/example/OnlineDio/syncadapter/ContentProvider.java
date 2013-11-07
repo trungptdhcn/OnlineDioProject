@@ -147,7 +147,6 @@ public class ContentProvider extends android.content.ContentProvider
                 {
                     getContext().getContentResolver().notifyChange(uri, null);
                 }
-//                return Uri.parse(ProviderContract.CONTENT_URI + "/" + id);
                 return Uri.parse(ProviderContract.PROFILE_CONTENT_URI + "/" + id);
             }
             default:
@@ -227,7 +226,16 @@ public class ContentProvider extends android.content.ContentProvider
             }
             case (PROFILE_PATH_TOKEN):
             {
-
+                rowsUpdated = db.update(DbHelper.PROFILE_TABLE_NAME, values, selection, selectionArgs);
+                break;
+            }
+            case (PROFILE_PATH_FOR_ID_TOKEN):
+            {
+                rowsUpdated = db.update(DbHelper.PROFILE_TABLE_NAME, values, DbHelper.PROFILE_ID +
+                        " = " + uri.getPathSegments().get(1) +
+                        (!TextUtils.isEmpty(selection) ? "AND (" +
+                                selection + ')' : ""), selectionArgs);
+                break;
             }
 
             default:

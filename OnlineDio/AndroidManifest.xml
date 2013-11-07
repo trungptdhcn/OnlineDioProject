@@ -17,7 +17,9 @@
         <activity android:name=".activity.NavigationActivity"
                   android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".activity.ProfileActivity"></activity>
+        <activity android:name=".activity.ProfileActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                ></activity>
         <activity android:name=".activity.LauchActivity"
                   android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>

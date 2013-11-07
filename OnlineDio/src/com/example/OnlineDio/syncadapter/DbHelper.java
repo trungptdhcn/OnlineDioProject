@@ -61,6 +61,7 @@ public class DbHelper extends SQLiteOpenHelper
     public static final String PROFILE_ID = "_id";
     public static final String PROFILE_FACEBOOK_ID = "facebook_id";
     public static final String PROFILE_USERNAME = "username";
+    public static final String PROFILE_PASS = "password";
     public static final String PROFILE_AVATAR = "avatar";
     public static final String PROFILE_COVER_IMAGE = "cover_image";
     public static final String PROFILE_DISPLAY_NAME = "display_name";
@@ -84,6 +85,7 @@ public class DbHelper extends SQLiteOpenHelper
             PROFILE_ID + " integer primary key autoincrement, " +
             PROFILE_FACEBOOK_ID + " integer, " +
             PROFILE_USERNAME + " text, " +
+            PROFILE_PASS + " text, " +
             PROFILE_AVATAR + " text, " +
             PROFILE_COVER_IMAGE + " text, " +
             PROFILE_DISPLAY_NAME + " text, " +
@@ -91,7 +93,7 @@ public class DbHelper extends SQLiteOpenHelper
             PROFILE_PHONE + " text, " +
             PROFILE_BIRTHDAY + " text, " +
             PROFILE_GENDER + " integer, " +
-            PROFILE_COUNTRY_ID + " integer, " +
+            PROFILE_COUNTRY_ID + " text, " +
             PROFILE_STORAGE_PLAN_ID + " integer, " +
             PROFILE_DESCRIPTION + " text, " +
             PROFILE_CREATED_AT + " text, " +

@@ -114,7 +114,8 @@ public class ListViewCustomerAdapter extends SimpleCursorAdapter
         holder.numberOfComment.setText(cursor.getString(cursor.getColumnIndex(DbHelper.HOMEFEED_COL_COMMENTS)));
         holder.numberOfLike.setText(cursor.getString(cursor.getColumnIndex(DbHelper.HOMEFEED_COL_LIKES)));
         holder.numberOfPostedDay.setText(cursor.getString(cursor.getColumnIndex(DbHelper.HOMEFEED_COL_UPDATED_AT)));
-
+        Image image = new Image(context);
+        image.DisplayImage(cursor.getString(cursor.getColumnIndex(DbHelper.HOMEFEED_COL_AVATAR)), holder.imge_avata);
     }
     static class ViewHolder
     {
@@ -124,5 +125,6 @@ public class ListViewCustomerAdapter extends SimpleCursorAdapter
         TextView numberOfLike;
         TextView numberOfComment;
         TextView numberOfPostedDay;
+
     }
 }

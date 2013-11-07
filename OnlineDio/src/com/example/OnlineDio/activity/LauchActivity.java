@@ -62,9 +62,14 @@ public class LauchActivity extends Activity
                                 String accountName = bnd.getString(AccountManager.KEY_ACCOUNT_NAME);
                                 mConnectedAccount = new Account(accountName, OnlineDioAccountGeneral.ACCOUNT_TYPE);
                                 Intent i = new Intent(getApplicationContext(),NavigationActivity.class);
+                                String user_id = mAccountManager.getUserData(mConnectedAccount,"user_id");
                                 i.putExtra(AccountManager.KEY_AUTHTOKEN,authToken);
                                 i.putExtra(AccountManager.KEY_ACCOUNT_NAME,accountName);
                                 i.putExtra(AccountManager.KEY_ACCOUNT_TYPE,mConnectedAccount.type);
+                                i.putExtra("user_id",user_id);
+                                Bundle b = new Bundle();
+                                b.putParcelable("account",mConnectedAccount);
+                                i.putExtras(b);
                                 startActivity(i);
                             }
                             showMessage(((authToken != null) ? "SUCCESS!\ntoken: " + authToken : "FAIL"));

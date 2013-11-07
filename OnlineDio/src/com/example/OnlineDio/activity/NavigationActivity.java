@@ -1,5 +1,6 @@
 package com.example.OnlineDio.activity;
 
+import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.content.Intent;
 import android.os.Bundle;
@@ -88,6 +89,13 @@ public class NavigationActivity extends FragmentActivity
             public void onClick(View v)
             {
                 Intent i = new Intent(getApplicationContext(), ProfileActivity.class);
+                String user_id = getIntent().getStringExtra("user_id");
+                i.putExtra(AccountManager.KEY_AUTHTOKEN,getIntent().getStringExtra(AccountManager.KEY_AUTHTOKEN));
+                i.putExtra(AccountManager.KEY_ACCOUNT_NAME,getIntent().getStringExtra(AccountManager.KEY_ACCOUNT_NAME));
+                i.putExtra("user_id",user_id);
+                Bundle b = getIntent().getExtras();
+                Account account = b.getParcelable("account");
+                i.putExtras(b);
                 startActivity(i);
             }
         });

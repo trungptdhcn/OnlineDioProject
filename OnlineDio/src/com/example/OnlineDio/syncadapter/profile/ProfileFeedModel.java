@@ -1,5 +1,8 @@
 package com.example.OnlineDio.syncadapter.profile;
 
+import android.database.Cursor;
+import com.example.OnlineDio.syncadapter.DbHelper;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Trung
@@ -9,8 +12,8 @@ package com.example.OnlineDio.syncadapter.profile;
  */
 public class ProfileFeedModel
 {
-    private Long id;
-    private Long facebook_id;
+    private String id ;
+    private String facebook_id;
     private String username;
     private String password;
     private String avatar;
@@ -20,7 +23,7 @@ public class ProfileFeedModel
     private String phone;
     private String birthday;
     private Long gender;
-    private Long country_id;
+    private String country_id;
     private Long storage_plan_id;
     private String description;
     private String created_at;
@@ -31,22 +34,105 @@ public class ProfileFeedModel
     private Long followings;
     private Long audiences;
 
-    public Long getId()
+    public ProfileFeedModel()
+    {
+
+    }
+    public ProfileFeedModel(String id,String facebook_id,String username,String password,
+                            String avatar,String cover_image,String display_name,String full_name,String phone,
+                            String birthday,Long gender,String country_id,Long storage_plan_id,String description,String created_at,
+                            String updated_at,Long sounds,Long favorites, Long likes,Long followings,Long audiences)
+    {
+        this.id = id;
+        this.facebook_id = facebook_id;
+        this.username = password;
+        this.password = password;
+        this.avatar = avatar;
+        this.cover_image = cover_image;
+        this.display_name = display_name;
+        this.full_name = full_name;
+        this.phone = phone;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.country_id = country_id;
+        this.username = username;
+        this.storage_plan_id = storage_plan_id;
+        this.description = description;
+        this.created_at = created_at;
+        this.updated_at = updated_at;
+        this.sounds = sounds;
+        this.favorites = favorites;
+        this.likes = likes;
+        this.followings = followings;
+        this.audiences = audiences;
+    }
+
+    public static ProfileFeedModel fromCursor(Cursor curHomeFeeds)
+    {
+        /* private String id ;
+    private String facebook_id;
+    private String username;
+    private String password;
+    private String avatar;
+    private String cover_image;
+    private String display_name;
+    private String full_name;
+    private String phone;
+    private String birthday;
+    private Long gender;
+    private String country_id;
+    private Long storage_plan_id;
+    private String description;
+    private String created_at;
+    private String updated_at;
+    private Long sounds;
+    private Long favorites;
+    private Long likes;
+    private Long followings;
+    private Long audiences;*/
+        String id = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_ID));
+        String facebook_id = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_FACEBOOK_ID));
+        String username = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_USERNAME));
+        String password = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_PASS));
+        String avatar = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_AVATAR));
+        String cover_image = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_COVER_IMAGE));
+        String display_name = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_DISPLAY_NAME));
+        String full_name = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_FULL_NAME));
+        String phone = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_PHONE));
+        String birthday = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_BIRTHDAY));
+        Long gender = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_GENDER));
+        String country_id = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_COUNTRY_ID));
+        Long storage_plan_id = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_STORAGE_PLAN_ID));
+        String description = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_DESCRIPTION));
+        String created_at = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_CREATED_AT));
+        String updated_at = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_UPDATE_AT));
+        Long sounds = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_SOUNDS));
+        Long favorites = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_FAVORITES));
+        Long likes = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_LIKES));
+        Long followings = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_FOLLOWINGS));
+        Long audiences = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.PROFILE_AUDIENCES));
+
+        return new ProfileFeedModel(id,facebook_id,username,password,avatar,cover_image,display_name,
+                full_name,phone,birthday,gender,country_id,storage_plan_id,description,created_at,updated_at,sounds,favorites,
+                likes,followings,audiences);
+    }
+
+    public String getId()
     {
         return id;
     }
 
-    public void setId(Long id)
+    public void setId(String id)
     {
         this.id = id;
     }
 
-    public Long getFacebook_id()
+    public String getFacebook_id()
     {
         return facebook_id;
     }
 
-    public void setFacebook_id(Long facebook_id)
+    public void setFacebook_id(String facebook_id)
     {
         this.facebook_id = facebook_id;
     }
@@ -141,12 +227,12 @@ public class ProfileFeedModel
         this.gender = gender;
     }
 
-    public Long getCountry_id()
+    public String getCountry_id()
     {
         return country_id;
     }
 
-    public void setCountry_id(Long country_id)
+    public void setCountry_id(String country_id)
     {
         this.country_id = country_id;
     }
@@ -240,4 +326,6 @@ public class ProfileFeedModel
     {
         this.audiences = audiences;
     }
+
+
 }

@@ -3,6 +3,7 @@ package com.example.OnlineDio.activity;
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorActivity;
 import android.accounts.AccountManager;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -12,6 +13,11 @@ import android.widget.*;
 import com.example.OnlineDio.R;
 import com.example.OnlineDio.auth.OnlineDioAccountGeneral;
 import com.example.OnlineDio.auth.User;
+import com.example.OnlineDio.syncadapter.DbHelper;
+import com.example.OnlineDio.syncadapter.ProviderContract;
+import com.example.OnlineDio.syncadapter.profile.ParseProfileFeedInserver;
+import com.example.OnlineDio.syncadapter.profile.ProfileFeedModel;
+import org.json.JSONException;
 
 public class LoginActivity extends AccountAuthenticatorActivity
 {
@@ -95,6 +101,7 @@ public class LoginActivity extends AccountAuthenticatorActivity
                     data.putString(AccountManager.KEY_ACCOUNT_NAME, userName);
                     data.putString(AccountManager.KEY_ACCOUNT_TYPE, accountType);
                     data.putString(AccountManager.KEY_AUTHTOKEN, user.getAccess_token());
+                    data.putString("userID",user.getUser_id());
 
                     // We keep the user's object id as an extra data on the account.
                     // It's used later for determine ACL for the data we send to the Parse.com service
@@ -128,29 +135,81 @@ public class LoginActivity extends AccountAuthenticatorActivity
 
         String accountName = intent.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
         String accountPassword = intent.getStringExtra(PARAM_USER_PASS);
+        String id = intent.getStringExtra("userID");
+        String authtoken = intent.getStringExtra(AccountManager.KEY_AUTHTOKEN);
         final Account account = new Account(accountName, intent.getStringExtra(AccountManager.KEY_ACCOUNT_TYPE));
-
+        getInforProfileAccount(id,authtoken);
         if (getIntent().getBooleanExtra(ARG_IS_ADDING_NEW_ACCOUNT, false)) {
             Log.d("udinic", TAG + "> finishLogin > addAccountExplicitly");
-            String authtoken = intent.getStringExtra(AccountManager.KEY_AUTHTOKEN);
+
             String authtokenType = mAuthTokenType;
 
             // Creating the account on the device and setting the auth token we got
             // (Not setting the auth token will cause another call to the server to authenticate the user)
             mAccountManager.addAccountExplicitly(account, accountPassword, intent.getBundleExtra(AccountManager.KEY_USERDATA));
             mAccountManager.setAuthToken(account, authtokenType, authtoken);
+            mAccountManager.setUserData(account,"user_id",id);
         } else {
             Log.d("udinic", TAG + "> finishLogin > setPassword");
             mAccountManager.setPassword(account, accountPassword);
         }
         Intent i = new Intent(this,NavigationActivity.class);
+        Bundle b = new Bundle();
+        b.putParcelable("account", account);
         i.putExtra(AccountManager.KEY_ACCOUNT_NAME,accountName);
         i.putExtra(AccountManager.KEY_AUTHTOKEN,intent.getStringExtra(AccountManager.KEY_AUTHTOKEN));
         i.putExtra(AccountManager.KEY_ACCOUNT_TYPE,account.type);
+        i.putExtras(b);
         startActivity(i);
         setAccountAuthenticatorResult(intent.getExtras());
         setResult(RESULT_OK, intent);
         finish();
+    }
+    public void getInforProfileAccount(final String user_id, final String athToken)
+    {
+        final ParseProfileFeedInserver parseProfileFeedInserver = new ParseProfileFeedInserver();
+        new AsyncTask<String, String, ProfileFeedModel>()
+        {
+            ProfileFeedModel profileFeedModel = new ProfileFeedModel();
+            @Override
+            protected ProfileFeedModel doInBackground(String... params)
+            {
+                try
+                {
+                    profileFeedModel = parseProfileFeedInserver.getHomeFeed(athToken, user_id);
+                    ContentValues values = new ContentValues();
+                    values.put(DbHelper.PROFILE_ID, profileFeedModel.getId());
+                    values.put(DbHelper.PROFILE_FACEBOOK_ID, profileFeedModel.getFacebook_id());
+                    values.put(DbHelper.PROFILE_USERNAME, profileFeedModel.getUsername());
+                    values.put(DbHelper.PROFILE_PASS, profileFeedModel.getPassword());
+                    values.put(DbHelper.PROFILE_AVATAR, profileFeedModel.getAvatar());
+                    values.put(DbHelper.PROFILE_COVER_IMAGE, profileFeedModel.getCover_image());
+                    values.put(DbHelper.PROFILE_DISPLAY_NAME, profileFeedModel.getDisplay_name());
+                    values.put(DbHelper.PROFILE_FULL_NAME, profileFeedModel.getFull_name());
+                    values.put(DbHelper.PROFILE_PHONE, profileFeedModel.getPhone());
+                    values.put(DbHelper.PROFILE_BIRTHDAY, profileFeedModel.getBirthday());
+                    values.put(DbHelper.PROFILE_GENDER, profileFeedModel.getGender());
+                    values.put(DbHelper.PROFILE_COUNTRY_ID, profileFeedModel.getCountry_id());
+                    values.put(DbHelper.PROFILE_STORAGE_PLAN_ID, profileFeedModel.getStorage_plan_id());
+                    values.put(DbHelper.PROFILE_DESCRIPTION, profileFeedModel.getDescription());
+                    values.put(DbHelper.PROFILE_CREATED_AT, profileFeedModel.getCreated_at());
+                    values.put(DbHelper.PROFILE_UPDATE_AT, profileFeedModel.getUpdated_at());
+                    values.put(DbHelper.PROFILE_SOUNDS, profileFeedModel.getSounds());
+                    values.put(DbHelper.PROFILE_FAVORITES, profileFeedModel.getFavorites());
+                    values.put(DbHelper.PROFILE_LIKES, profileFeedModel.getLikes());
+                    values.put(DbHelper.PROFILE_FOLLOWINGS, profileFeedModel.getFollowings());
+                    values.put(DbHelper.PROFILE_AUDIENCES, profileFeedModel.getAudiences());
+//                    getContentResolver().delete(ProviderContract.PROFILE_CONTENT_URI,null,null);
+                    getContentResolver().insert(ProviderContract.PROFILE_CONTENT_URI,values);
+                }
+                catch (JSONException e)
+                {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+                return profileFeedModel;
+            }
+        }.execute();
+
     }
 }
 

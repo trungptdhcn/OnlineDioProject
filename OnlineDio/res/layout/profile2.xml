@@ -34,7 +34,7 @@
                         android:layout_centerVertical="true"
                         android:id="@+id/profile_ibSave"
                         android:layout_alignParentRight="true"
-                        android:background="@drawable/btn_save" android:padding="@dimen/home_padding_ibDone"
+                        android:background="@drawable/custom_button_done" android:padding="@dimen/home_padding_ibDone"
                         android:layout_margin="@dimen/home_margin_ibDone"
                         />
                 <TextView
@@ -108,7 +108,8 @@
                             android:hint="@string/etDisplayname" android:layout_toRightOf="@+id/textView1"
                             android:layout_alignBaseline="@+id/textView1"
                             android:layout_marginLeft="@dimen/profile_marginLeft_tvYourDisplayName"
-                            android:layout_marginRight="@dimen/profile_marginRight_tvYourDisplayName"/>
+                            android:layout_marginRight="@dimen/profile_marginRight_tvYourDisplayName"
+                            android:textColor="#000000"/>
                     <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -163,6 +164,7 @@
                             android:background="@null"
                             android:textSize="@dimen/profile_textSize_etFullName"
                             android:lines="1"
+                            android:textColor="#000000"
                             android:layout_toRightOf="@+id/profile_tvFullName"
                             android:layout_alignBottom="@+id/profile_tvFullName"
                             android:layout_marginLeft="@dimen/profile_marginLeft_etFullName"
@@ -198,6 +200,7 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/exPhone"
                             android:id="@+id/profile_etPhoneNumber"
+                            android:textColor="#000000"
                             android:background="@null"
                             android:phoneNumber="true"
                             android:textSize="@dimen/profile_textSize_etPhone"
@@ -237,6 +240,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
+                            android:textColor="#000000"
                             android:focusable="false"
                             android:inputType="date"
                             android:textSize="@dimen/profile_textSize_etBirthday"
@@ -285,6 +289,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/etCountry"
+                            android:textColor="#000000"
                             android:background="@null"
                             android:textSize="@dimen/profile_testSize_edCountry"
                             android:focusable="false"
@@ -305,21 +310,21 @@
                                 android:button="@null"
                                 android:background="@drawable/custome_radiobutton_female"
                                 android:checked="true"
-                                android:id="@+id/radioButton"
+                                android:id="@+id/profile_rdFemale"
                                 />
                         <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/custom_radiobutton_male"
                                 android:button="@null"
-                                android:id="@+id/radioButton1" android:checked="false"/>
+                                android:id="@+id/profile_rdMale" android:checked="false"/>
                     </RadioGroup>
                     <Spinner
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:visibility="invisible"
                             android:id="@+id/profile_spListCountry" android:layout_centerHorizontal="true"
-                            android:entries="@array/listCountry"
+                            android:entries="@array/codeCountry"
                             android:layout_below="@+id/profile_ibCleanPhone"/>
 
                 </RelativeLayout>
@@ -344,10 +349,11 @@
                         android:text="Your profile description"
                         android:ems="20"
                         android:scrollbars="vertical"
+                        android:textColor="#000000"
                         android:gravity="top|left"
                         android:background="@drawable/image_cell_description"
                         android:inputType="textMultiLine|textImeMultiLine"
-                        android:id="@+id/editText2" android:layout_below="@+id/textView4"
+                        android:id="@+id/profile_edtDescription" android:layout_below="@+id/textView4"
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="@dimen/profile_marginLeft_etDescription"
                         android:layout_marginRight="@dimen/profile_marginRight_etDescription"

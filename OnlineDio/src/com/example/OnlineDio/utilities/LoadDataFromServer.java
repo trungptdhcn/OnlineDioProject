@@ -24,7 +24,6 @@ public class LoadDataFromServer
             HttpGet httpGet = new HttpGet(url);
             HttpResponse response = httpClient.execute(httpGet);
             result = EntityUtils.toString(response.getEntity());
-
         }
         catch (Exception e)
         {

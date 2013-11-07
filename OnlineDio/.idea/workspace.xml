@@ -31,13 +31,13 @@
     <list id="6b9a0844-5eac-4903-8f82-5f888c8f04b4" name="New changelist" comment="" />
     <ignored path="OnlineDio.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383703798837" ignored="false" />
-    <file path="/Dummy.txt" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383708350913" ignored="false" />
+    <file path="/fragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383796950257" ignored="false" />
+    <file path="/Dummy.txt" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383796539903" ignored="false" />
     <file path="/MyActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382407210732" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383704777723" ignored="false" />
     <file path="/a.dummy" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383642186873" ignored="false" />
     <file path="/navigation.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382351429893" ignored="false" />
-    <file path="/NavigationActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383575964698" ignored="false" />
+    <file path="/NavigationActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383721022770" ignored="false" />
     <file path="/FavoriteFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381745729858" ignored="false" />
     <file path="/HomeActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382288674505" ignored="false" />
     <file path="$PROJECT_DIR$/../../NavigationDemo/src/com/example/NavigationDemo/MyActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381740825134" ignored="false" />
@@ -70,13 +70,13 @@
     <file path="$PROJECT_DIR$/../../NavigationDemo/gen/com/example/NavigationDemo/Manifest.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381799116111" ignored="false" />
     <file path="$PROJECT_DIR$/../../NavigationDemo/project.properties" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381773362613" ignored="false" />
     <file path="/strings.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381975631106" ignored="false" />
-    <file path="/LauchActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383574367148" ignored="false" />
+    <file path="/LauchActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383720970785" ignored="false" />
     <file path="/custom_navigation_edtsearch.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381811957348" ignored="false" />
-    <file path="/HomeFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383645982430" ignored="false" />
-    <file path="/ListViewCustomerAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383637853267" ignored="false" />
+    <file path="/HomeFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383817568399" ignored="false" />
+    <file path="/ListViewCustomerAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383800115105" ignored="false" />
     <file path="/test.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381830926814" ignored="false" />
     <file path="/login2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381856221298" ignored="false" />
-    <file path="/LoginActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383573766548" ignored="false" />
+    <file path="/LoginActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383726954870" ignored="false" />
     <file path="/navigation_layout_row.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381889725021" ignored="false" />
     <file path="/content_layout.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382368857076" ignored="false" />
     <file path="/home_row_of_listview_2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1381908516018" ignored="false" />
@@ -110,7 +110,7 @@
     <file path="$USER_HOME$/Downloads/TestCropImage/.idea/workspace.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382064352853" ignored="false" />
     <file path="/content_custom_avatarimage.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382064112900" ignored="false" />
     <file path="/home_row_of_listview.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382072511551" ignored="false" />
-    <file path="/home_row_of_listview2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382077981281" ignored="false" />
+    <file path="/home_row_of_listview2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383810888036" ignored="false" />
     <file path="/home_custom_btnslidebar.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382080135161" ignored="false" />
     <file path="/home_custom_btnnotification.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382080365434" ignored="false" />
     <file path="/lauch_customer_loginfb.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1382081781258" ignored="false" />
@@ -164,25 +164,29 @@
     <file path="$PROJECT_DIR$/../../SyncAdapter-master/SyncAdapterExample/res/xml/sync_adapter.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383574670373" ignored="false" />
     <file path="/HomeFeedDbHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383574800485" ignored="false" />
     <file path="/HomeFeedProvider.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383646663819" ignored="false" />
-    <file path="/HomeFeedSynAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383648040987" ignored="false" />
+    <file path="/HomeFeedSynAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383785884582" ignored="false" />
     <file path="/ParseHomeFeedInServer.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383703972238" ignored="false" />
     <file path="/HomeFeedSynService.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383575152542" ignored="false" />
     <file path="/GetAgainToken.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383615328302" ignored="false" />
-    <file path="/ProfileFeedModel.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383705295412" ignored="false" />
+    <file path="/ProfileFeedModel.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383794861379" ignored="false" />
     <file path="/sync_adapter.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383646302958" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../BasicSyncAdapter/src/com/example/android/network/sync/basicsyncadapter/EntryListFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383639081066" ignored="false" />
     <file path="/EntryListFragment.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383639079190" ignored="false" />
     <file path="/SyncUtils.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383641669910" ignored="false" />
     <file path="/ProfileFeedDbHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383701333069" ignored="false" />
-    <file path="/DbHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383707769160" ignored="false" />
+    <file path="/DbHelper.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383723925401" ignored="false" />
     <file path="/ParseComServerAccessor.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383704029475" ignored="false" />
-    <file path="$PROJECT_DIR$/src/com/example/OnlineDio/util/ListViewCustomerAdapter.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383704948972" ignored="false" />
     <file path="/ProfileFeedContract.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383705695106" ignored="false" />
     <file path="/ProviderContract.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383706006678" ignored="false" />
-    <file path="/ParseProfileFeedInserver.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383706426008" ignored="false" />
+    <file path="/ParseProfileFeedInserver.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383722894280" ignored="false" />
     <file path="/OnlineDioLinkUrl.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383706355626" ignored="false" />
-    <file path="/ContentProvider.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383708336773" ignored="false" />
+    <file path="/ContentProvider.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383711873980" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/example/OnlineDio/BuildConfig.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383708591045" ignored="false" />
+    <file path="/ProfileActivity.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383811225911" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../../../Myproject/ContentProviderExample/src/com/as400samplecode/CountryEdit.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383725178833" ignored="false" />
+    <file path="/LoadDataFromServer.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383730774026" ignored="false" />
+    <file path="/profile2.xml" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383793288058" ignored="false" />
+    <file path="/Image.java" changelist="03a71fb1-6ed9-4ee5-985e-409887dd835e" time="1383800034774" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +201,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -234,7 +237,24 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/LoginActivity.java" line="180" class="com.example.OnlineDio.activity.LoginActivity$3" package="com.example.OnlineDio.activity">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -244,10 +264,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomeFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ProfileActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/ProfileActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="237" column="26" selection-start="10002" selection-end="10229" vertical-scroll-proportion="-6.24">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4558#4566#0" expanded="true" />
+                <element signature="e#6977#10253#0" expanded="true" />
+                <element signature="e#10242#10243#0" expanded="true" />
+                <element signature="e#17359#17371#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/NavigationActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="35" selection-start="4127" selection-end="4134" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileFeedModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="0" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="171" column="0" selection-start="7356" selection-end="7356" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LauchActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/LauchActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="89" selection-start="2908" selection-end="2908" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1720#3704#0" expanded="true" />
+                <element signature="e#3685#3686#0" expanded="true" />
+                <element signature="e#3878#4054#0" expanded="true" />
+                <element signature="e#4043#4044#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/fragment/HomeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="3336" selection-end="3796" vertical-scroll-proportion="0.0">
+            <state line="95" column="56" selection-start="3620" selection-end="3620" vertical-scroll-proportion="-0.0778032">
+              <folding>
+                <element signature="e#1786#1796#0" expanded="true" />
+                <element signature="e#4408#4575#0" expanded="true" />
+                <element signature="e#4564#4565#0" expanded="true" />
+                <element signature="e#5032#5464#0" expanded="true" />
+                <element signature="e#5453#5454#0" expanded="true" />
+                <element signature="e#5726#6185#0" expanded="true" />
+                <element signature="e#6174#6175#0" expanded="true" />
+                <element signature="e#6339#6524#0" expanded="true" />
+                <element signature="e#6513#6514#0" expanded="true" />
+                <element signature="e#7262#8830#0" expanded="true" />
+                <element signature="e#7478#8812#0" expanded="true" />
+                <element signature="e#8797#8798#0" expanded="true" />
+                <element signature="e#8823#8824#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="37" selection-start="309" selection-end="311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -256,77 +355,31 @@
       <file leaf-file-name="HomeFeedSynAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="21" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0">
+            <state line="49" column="87" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#9463#9464#0" expanded="true" />
+                <element signature="e#1429#9713#0" expanded="true" />
+                <element signature="e#9702#9703#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProviderContract.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ProviderContract.java">
+      <file leaf-file-name="home_row_of_listview2.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/home_row_of_listview2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="306" selection-end="323" vertical-scroll-proportion="0.0">
+            <state line="12" column="42" selection-start="591" selection-end="600" vertical-scroll-proportion="-4.08">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/DbHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="56" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeFeedSynService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynService.java">
+      <file leaf-file-name="ListViewCustomerAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/util/ListViewCustomerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="5" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseProfileFeedInserver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseProfileFeedInserver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#985#1003#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileFeedModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="23" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContentProvider.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ContentProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="124" selection-start="8295" selection-end="8295" vertical-scroll-proportion="0.40234375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseHomeFeedInServer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/ParseHomeFeedInServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="85" selection-start="729" selection-end="806" vertical-scroll-proportion="0.0">
+            <state line="93" column="92" selection-start="3410" selection-end="3410" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -350,22 +403,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/utilities/SyncUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseHomeFeedInServer.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ParseComServerAccessor.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ParseHomeFeedInServer.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/HomeFeedContract.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedProvider.java" />
-        <option value="$PROJECT_DIR$/res/xml/sync_adapter.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/OnlineDioLinkUrl.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/utilities/LoadDataFromServer.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseProfileFeedInserver.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedContract.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/DbHelper.java" />
-        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ProviderContract.java" />
         <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ContentProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/DbHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/utilities/LoadDataFromServer.java" />
+        <option value="$PROJECT_DIR$/res/values/array.xml" />
+        <option value="$PROJECT_DIR$/res/layout/profile2.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/activity/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/util/FileCache.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/util/Utils.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/util/Image.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/util/ListViewCustomerAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/home_row_of_listview2.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/activity/ProfileActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/example/OnlineDio/fragment/HomeFragment.java" />
       </list>
     </option>
   </component>
@@ -404,7 +457,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -460,6 +512,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,24 +712,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineDio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineDio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -675,8 +731,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineDio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -691,7 +766,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="154" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gson-2.2.4.jar!/" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="162" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="829" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="836" />
@@ -713,9 +788,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="P772A10D_VT" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
@@ -726,11 +801,11 @@
       <recent name="com.example.OnlineDio" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\OnlineDioProject.git\trunk\OnlineDio\src\com\example\OnlineDio\util" />
       <recent name="F:\Android\Android Qsoft\OnlineDio\trunk\OnlineDio\src\com\example\OnlineDio\syncadapter\home" />
       <recent name="F:\Android\Android Qsoft\OnlineDio\trunk\OnlineDio\res\xml" />
       <recent name="F:\Android\Android Qsoft\OnlineDio\trunk\OnlineDio\src\com\example\OnlineDio\auth" />
       <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\res\layout-lanscape" />
-      <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\res\music" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Android\Android Qsoft\MyAndroidTeam\OnlineDio\res\values" />
@@ -873,7 +948,7 @@
       <option name="ACTIVITY_CLASS" value="com.example.OnlineDio.activity.LauchActivity" />
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1036,34 +1111,34 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10242792" sideWeight="0.85102737" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Sonar" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.002283105" sideWeight="0.6729452" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35958904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29242423" sideWeight="0.85102737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1489726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23520486" sideWeight="0.85102737" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Sonar" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.002283105" sideWeight="0.6729452" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35958904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32020548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.6729452" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29623288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29242423" sideWeight="0.41638225" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31506848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43493152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5650685" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28939393" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42636988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.106818184" sideWeight="0.72431505" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27575758" sideWeight="0.72431505" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.6729452" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1139,124 +1214,149 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/ProfileActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/profile2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="64" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0">
+        <state line="53" column="57" selection-start="2853" selection-end="2873" vertical-scroll-proportion="-3.24">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="0" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/authenticator.xml">
+    <entry file="file://$PROJECT_DIR$/../../../../../../adt-bundle-windows-x86_64-20130917/sdk/sources/android-18/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="263" column="0" selection-start="11523" selection-end="11523" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/sync_adapter.xml">
+    <entry file="file://$PROJECT_DIR$/../../../../../../adt-bundle-windows-x86_64-20130917/sdk/sources/android-18/android/os/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="60" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+        <state line="100" column="0" selection-start="4112" selection-end="4112" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../adt-bundle-windows-x86_64-20130917/sdk/sources/android-18/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3514" column="0" selection-start="134756" selection-end="134756" vertical-scroll-proportion="0.33241758">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="67" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.0">
+        <state line="6" column="37" selection-start="309" selection-end="311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/OnlineDioLinkUrl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="116" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+        <state line="171" column="0" selection-start="7356" selection-end="7356" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/utilities/LoadDataFromServer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/NavigationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
+        <state line="94" column="35" selection-start="4127" selection-end="4134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/LauchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="89" selection-start="2908" selection-end="2908" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1720#3704#0" expanded="true" />
+            <element signature="e#3685#3686#0" expanded="true" />
+            <element signature="e#3878#4054#0" expanded="true" />
+            <element signature="e#4043#4044#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ProfileFeedModel.java">
+    <entry file="file://$PROJECT_DIR$/../../../../../../adt-bundle-windows-x86_64-20130917/sdk/sources/android-18/android/support/v4/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+        <state line="985" column="16" selection-start="35937" selection-end="35937" vertical-scroll-proportion="0.33241758">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/profile/ParseProfileFeedInserver.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/home_row_of_listview2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+        <state line="12" column="42" selection-start="591" selection-end="600" vertical-scroll-proportion="-4.08">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/activity/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="237" column="26" selection-start="10002" selection-end="10229" vertical-scroll-proportion="-6.24">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#985#1003#0" expanded="true" />
+            <element signature="e#4558#4566#0" expanded="true" />
+            <element signature="e#6977#10253#0" expanded="true" />
+            <element signature="e#10242#10243#0" expanded="true" />
+            <element signature="e#17359#17371#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/fragment/HomeFragment.java">
+    <entry file="file://$PROJECT_DIR$/../../../../../../adt-bundle-windows-x86_64-20130917/sdk/sources/android-18/android/content/ContentResolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="3336" selection-end="3796" vertical-scroll-proportion="0.0">
+        <state line="1400" column="23" selection-start="59943" selection-end="59943" vertical-scroll-proportion="0.3318078">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/util/ListViewCustomerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="92" selection-start="3410" selection-end="3410" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="21" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0">
+        <state line="49" column="87" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#9463#9464#0" expanded="true" />
+            <element signature="e#1429#9713#0" expanded="true" />
+            <element signature="e#9702#9703#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/HomeFeedSynService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/fragment/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/home/ParseHomeFeedInServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="85" selection-start="729" selection-end="806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../adt-bundle-windows-x86_64-20130917/sdk/sources/android-18/android/content/UriMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="16" selection-start="5808" selection-end="5808" vertical-scroll-proportion="7.9407897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/DbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="56" selection-start="3810" selection-end="3810" vertical-scroll-proportion="0.0">
+        <state line="95" column="56" selection-start="3620" selection-end="3620" vertical-scroll-proportion="-0.0778032">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1786#1796#0" expanded="true" />
+            <element signature="e#4408#4575#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#5032#5464#0" expanded="true" />
+            <element signature="e#5453#5454#0" expanded="true" />
+            <element signature="e#5726#6185#0" expanded="true" />
+            <element signature="e#6174#6175#0" expanded="true" />
+            <element signature="e#6339#6524#0" expanded="true" />
+            <element signature="e#6513#6514#0" expanded="true" />
+            <element signature="e#7262#8830#0" expanded="true" />
+            <element signature="e#7478#8812#0" expanded="true" />
+            <element signature="e#8797#8798#0" expanded="true" />
+            <element signature="e#8823#8824#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ProviderContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="306" selection-end="323" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/OnlineDio/syncadapter/ContentProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="124" selection-start="8295" selection-end="8295" vertical-scroll-proportion="0.40234375">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,7 +1418,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

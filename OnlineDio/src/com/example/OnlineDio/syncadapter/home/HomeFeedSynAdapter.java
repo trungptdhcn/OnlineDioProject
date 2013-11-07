@@ -60,10 +60,12 @@ public class HomeFeedSynAdapter extends AbstractThreadedSyncAdapter
                     Object remoteDataObject = parseComService.getShows(authToken);
                     if (remoteDataObject instanceof ParseComError)
                     {
-                        authToken = OnlineDioAccountGeneral.sServerAuthenticate.userSignIn(account.name,
-                                mAccountManager.getPassword(account), account.type).getAccess_token();
+//                        authToken = OnlineDioAccountGeneral.sServerAuthenticate.userSignIn(account.name,
+//                                mAccountManager.getPassword(account), account.type).getAccess_token();
                         mAccountManager.invalidateAuthToken(account.type, authToken);
-                        remoteDataObject = parseComService.getShows(authToken);
+                        String newToken = mAccountManager.getAuthToken(account, OnlineDioAccountGeneral.AUTHTOKEN_TYPE_FULL_ACCESS, true, null, null)
+                                .getResult().getString(AccountManager.KEY_AUTHTOKEN);
+                        remoteDataObject = parseComService.getShows(newToken);
                     }
                     ArrayList<HomeFeedModel> remoteData = (ArrayList<HomeFeedModel>) remoteDataObject;
                     ArrayList<ContentProviderOperation> batch = new ArrayList<ContentProviderOperation>();
