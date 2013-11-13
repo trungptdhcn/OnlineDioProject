@@ -8,21 +8,27 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_gravity="center"
-            android:background="@drawable/navbar_1" android:minHeight="35dp">
-        <Button
+            android:background="@drawable/navbar1" android:minHeight="35dp">
+        <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/login_btBack" android:layout_alignParentLeft="true" android:layout_marginLeft="6dp"
-                android:layout_centerVertical="true" android:background="@drawable/common_custom_btnback"
-                android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
-        <Button
+                android:id="@+id/login_btBack"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_custom_btnback"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+        <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/login_btDone"
                 android:enabled="true"
                 android:layout_centerVertical="true"
-                android:layout_alignParentRight="true" android:layout_alignTop="@+id/login_btBack"
-                android:background="@drawable/soundboard_btn_done" android:layout_marginRight="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/login_btBack"
+                android:background="@drawable/custom_button_done"
+                android:layout_marginRight="6dp"
                 android:layout_marginBottom="5dp" android:layout_marginLeft="5dp"/>
         <TextView
                 android:layout_width="wrap_content"
@@ -46,21 +52,25 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:layout_weight="1">
-            <EditText android:layout_width="wrap_content" android:layout_height="match_parent"
-                      android:drawableLeft="@drawable/icon_email" android:background="@null"
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:drawableLeft="@drawable/icon_email"
+                      android:background="@null"
                       android:id="@+id/login_et_email"
                       android:drawablePadding="5dp"
                       android:text="qsoft@gmail.com  "
                       android:layout_weight="1" android:layout_marginLeft="10dp" android:layout_marginRight="5dp"
                       android:layout_gravity="left|center_vertical" android:hint="@string/login_edtEmailHint"
-                      android:singleLine="true" android:textSize="16sp"/>
+                      android:singleLine="true" android:textSize="16sp" android:textColor="#333333"/>
             <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
                          android:layout_centerVertical="true" android:id="@+id/login_ib_cancelOfEmail"
                          android:src="@drawable/login_incondelete"
                          android:background="@null"
                          android:visibility="invisible"
-                         android:layout_alignParentRight="true" android:layout_alignTop="@+id/login_edtEmail"
-                         android:layout_gravity="center_vertical" android:layout_marginRight="10dp"/>
+                         android:layout_alignParentRight="true"
+                         android:layout_alignTop="@+id/login_et_email"
+                         android:layout_gravity="center_vertical"
+                         android:layout_marginRight="10dp"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="horizontal"
@@ -74,13 +84,15 @@
                       android:text="e10adc3949ba59abbe56e057f20f883e"
                       android:drawablePadding="5dp"
                       android:layout_marginLeft="10dp" android:layout_marginRight="5dp"
-                      android:hint="@string/login_edtPasswordHint" android:singleLine="true" android:textSize="16sp"/>
+                      android:hint="@string/login_edtPasswordHint" android:singleLine="true" android:textSize="16sp"
+                      android:textColor="#333333"/>
             <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
                          android:id="@+id/login_ib_cancelOfPass" android:src="@drawable/login_incondelete"
                          android:layout_gravity="center_vertical"
                          android:background="@null"
                          android:visibility="invisible"
-                         android:layout_alignRight="@+id/login_edtPass" android:layout_centerVertical="true"
+                         android:layout_alignRight="@+id/login_et_Pass"
+                         android:layout_centerVertical="true"
                          android:layout_marginRight="10dp"/>
         </LinearLayout>
     </LinearLayout>

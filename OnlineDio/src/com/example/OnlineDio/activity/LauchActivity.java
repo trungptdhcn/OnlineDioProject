@@ -1,18 +1,15 @@
 package com.example.OnlineDio.activity;
 
-import android.accounts.Account;
-import android.accounts.AccountManager;
-import android.accounts.AccountManagerCallback;
-import android.accounts.AccountManagerFuture;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 import com.example.OnlineDio.R;
 import com.example.OnlineDio.auth.OnlineDioAccountGeneral;
+import com.example.OnlineDio.controller.LauchController;
+import com.example.OnlineDio.network.HomeParseFeedInService;
+import com.googlecode.androidannotations.annotations.*;
+import com.googlecode.androidannotations.annotations.rest.RestService;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,79 +18,37 @@ import com.example.OnlineDio.auth.OnlineDioAccountGeneral;
  * Time: 08:56
  * To change this template use File | Settings | File Templates.
  */
+@EActivity(R.layout.lauch)
 public class LauchActivity extends Activity
 {
-    private Button lauch_btloginNormal;
-    private AccountManager mAccountManager;
-    private String authToken = null;
-    private Account mConnectedAccount;
+    @ViewById(R.id.lauch_btloginNormal)
+    Button lauch_btLoginNomarl;
 
-    public void onCreate(Bundle savedInstanceState)
+    @Bean
+    LauchController lauchController;
+
+    @RestService
+    HomeParseFeedInService homeParseFeedInService;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lauch);
-        mAccountManager = AccountManager.get(this);
-        lauch_btloginNormal = (Button) findViewById(R.id.lauch_btloginNormal);
-        lauch_btloginNormal.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                getTokenForAccountCreateIfNeeded(OnlineDioAccountGeneral.ACCOUNT_TYPE, OnlineDioAccountGeneral.AUTHTOKEN_TYPE_FULL_ACCESS);
-            }
-        });
     }
 
-    private void getTokenForAccountCreateIfNeeded(String accountType, String authTokenType)
+    @Click(R.id.lauch_btloginNormal)
+    void buttonClicked()
     {
-        final AccountManagerFuture<Bundle> future = mAccountManager.getAuthTokenByFeatures(accountType, authTokenType, null, this, null, null,
-                new AccountManagerCallback<Bundle>()
-                {
-                    @Override
-                    public void run(AccountManagerFuture<Bundle> future)
-                    {
-                        Bundle bnd = null;
-                        try
-                        {
-                            bnd = future.getResult();
-                            authToken = bnd.getString(AccountManager.KEY_AUTHTOKEN);
-                            if (authToken != null)
-                            {
-                                String accountName = bnd.getString(AccountManager.KEY_ACCOUNT_NAME);
-                                mConnectedAccount = new Account(accountName, OnlineDioAccountGeneral.ACCOUNT_TYPE);
-                                Intent i = new Intent(getApplicationContext(),NavigationActivity.class);
-                                String user_id = mAccountManager.getUserData(mConnectedAccount,"user_id");
-                                i.putExtra(AccountManager.KEY_AUTHTOKEN,authToken);
-                                i.putExtra(AccountManager.KEY_ACCOUNT_NAME,accountName);
-                                i.putExtra(AccountManager.KEY_ACCOUNT_TYPE,mConnectedAccount.type);
-                                i.putExtra("user_id",user_id);
-                                Bundle b = new Bundle();
-                                b.putParcelable("account",mConnectedAccount);
-                                i.putExtras(b);
-                                startActivity(i);
-                            }
-                            showMessage(((authToken != null) ? "SUCCESS!\ntoken: " + authToken : "FAIL"));
-                            Log.d("udinic", "GetTokenForAccount Bundle is " + bnd);
+        lauchController.getTokenForAccountCreateIfNeeded(OnlineDioAccountGeneral.ACCOUNT_TYPE
+                , OnlineDioAccountGeneral.AUTHTOKEN_TYPE_FULL_ACCESS);
+        test();
 
-                        }
-                        catch (Exception e)
-                        {
-                            e.printStackTrace();
-                            showMessage(e.getMessage());
-                        }
-                    }
-                }
-                , null);
     }
-    private void showMessage(final String msg) {
-        if (msg == null || msg.trim().equals(""))
-            return;
 
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Toast.makeText(getBaseContext(), msg, Toast.LENGTH_SHORT).show();
-            }
-        });
+    @Background
+    void test()
+    {
+        String a = homeParseFeedInService.getHomeFeeds("0cf74624cd3fda89b7c45e8a67853905767746de").toString();
+        Log.e("asdfasd",a);
     }
 }

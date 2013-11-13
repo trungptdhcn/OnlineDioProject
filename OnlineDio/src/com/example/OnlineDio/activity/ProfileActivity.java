@@ -60,65 +60,60 @@ import static android.content.DialogInterface.OnClickListener;
  */
 public class ProfileActivity extends Activity
 {
-    private EditText etBirthday;
-    private EditText etCountry;
-    private int year;
-    private int month;
-    private int day;
-    private Spinner spListCountry;
-    private RelativeLayout rlCoverImage;
-    private CircularImageView ibProfileIcon;
-    private AlertDialog.Builder builder;
-    private AlertDialog dialog;
-    private ImageButton ibProfileBack;
-    private EditText etDisplayName;
-    private ImageView ivCancelDisplayName;
-    private EditText etFullName;
-    private ImageButton ibCleanFullName;
-    private Uri mImageCaptureUri;
-    private ImageButton profile_imgbtSave;
-    private TextView profile_tvPhoneNumber;
-    private TextView profile_tvDescription;
-    private EditText profile_edDescription;
-    private EditText profile_edPhone;
-    private CircularImageView profile_imageViewAvata;
-    private RelativeLayout profile_imageViewProfile;
+    protected EditText edtBirthday;
+    protected EditText etCountry;
+    protected int year;
+    protected int month;
+    protected int day;
+    protected Spinner spListCountry;
+    protected RelativeLayout rlCoverImage;
+    protected CircularImageView profile_imgAvatar;
+    protected AlertDialog.Builder builder;
+    protected AlertDialog dialog;
+    protected ImageButton ibProfileBack;
+    protected EditText etDisplayName;
+    protected ImageView ivCancelDisplayName;
+    protected EditText etFullName;
+    protected ImageButton ibCleanFullName;
+    protected Uri mImageCaptureUri;
+    protected ImageButton profile_imgbtSave;
+    protected TextView profile_tvPhoneNumber;
+    protected TextView profile_tvDescription;
+    protected EditText profile_edDescription;
+    protected EditText profile_edPhone;
+    protected CircularImageView profile_imageViewAvata;
+    protected ImageView profile_imageViewProfile;
 
-    private static final int PICK_FROM_CAMERA = 1;
-    private static final int CROP_FROM_CAMERA = 2;
-    private static final int PICK_FROM_FILE = 3;
-
-    private boolean coverOrBackground = false;
-
-    private AccountManager accountManager;
-    private String athToken;
-
+    protected static final int PICK_FROM_CAMERA = 1;
+    protected static final int CROP_FROM_CAMERA = 2;
+    protected static final int PICK_FROM_FILE = 3;
+    protected boolean coverOrBackground = false;
     String[] projection = {
-            DbHelper.PROFILE_ID,
-            DbHelper.PROFILE_FACEBOOK_ID,
-            DbHelper.PROFILE_USERNAME,
-            DbHelper.PROFILE_PASS,
-            DbHelper.PROFILE_AVATAR,
-            DbHelper.PROFILE_COVER_IMAGE,
-            DbHelper.PROFILE_DISPLAY_NAME,
-            DbHelper.PROFILE_FULL_NAME,
-            DbHelper.PROFILE_PHONE,
-            DbHelper.PROFILE_BIRTHDAY,
-            DbHelper.PROFILE_GENDER,
-            DbHelper.PROFILE_COUNTRY_ID,
-            DbHelper.PROFILE_STORAGE_PLAN_ID,
-            DbHelper.PROFILE_DESCRIPTION,
-            DbHelper.PROFILE_CREATED_AT,
-            DbHelper.PROFILE_UPDATE_AT,
-            DbHelper.PROFILE_SOUNDS,
-            DbHelper.PROFILE_FAVORITES,
-            DbHelper.PROFILE_LIKES,
-            DbHelper.PROFILE_FOLLOWINGS,
-            DbHelper.PROFILE_AUDIENCES,
-    };
-    private AccountManager mAccountManager;
-    private RadioButton profile_rdFemale;
-    private RadioButton profile_rdMale;
+        DbHelper.PROFILE_ID,
+        DbHelper.PROFILE_FACEBOOK_ID,
+        DbHelper.PROFILE_USERNAME,
+        DbHelper.PROFILE_PASS,
+        DbHelper.PROFILE_AVATAR,
+        DbHelper.PROFILE_COVER_IMAGE,
+        DbHelper.PROFILE_DISPLAY_NAME,
+        DbHelper.PROFILE_FULL_NAME,
+        DbHelper.PROFILE_PHONE,
+        DbHelper.PROFILE_BIRTHDAY,
+        DbHelper.PROFILE_GENDER,
+        DbHelper.PROFILE_COUNTRY_ID,
+        DbHelper.PROFILE_STORAGE_PLAN_ID,
+        DbHelper.PROFILE_DESCRIPTION,
+        DbHelper.PROFILE_CREATED_AT,
+        DbHelper.PROFILE_UPDATE_AT,
+        DbHelper.PROFILE_SOUNDS,
+        DbHelper.PROFILE_FAVORITES,
+        DbHelper.PROFILE_LIKES,
+        DbHelper.PROFILE_FOLLOWINGS,
+        DbHelper.PROFILE_AUDIENCES,
+};
+    protected AccountManager mAccountManager;
+    protected RadioButton profile_rdFemale;
+    protected RadioButton profile_rdMale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -128,11 +123,11 @@ public class ProfileActivity extends Activity
         mAccountManager = AccountManager.get(this);
         final String[] items = new String[]{"Take from camera", "Select from gallery"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.select_dialog_item, items);
-        etBirthday = (EditText) findViewById(R.id.profile_dpBirthday);
+        edtBirthday = (EditText) findViewById(R.id.profile_edtBirthday);
         spListCountry = (Spinner) findViewById(R.id.profile_spListCountry);
         etCountry = (EditText) findViewById(R.id.profile_etCountry);
         rlCoverImage = (RelativeLayout) findViewById(R.id.profile_rlCoverImage);
-        ibProfileIcon = (CircularImageView) findViewById(R.id.profile_ivAvatar);
+        profile_imgAvatar = (CircularImageView) findViewById(R.id.profile_ivAvatar);
         profile_edPhone = (EditText) findViewById(R.id.profile_etPhoneNumber);
         ibProfileBack = (ImageButton) findViewById(R.id.profile_ibBack);
         etDisplayName = (EditText) findViewById(R.id.profile_etDisplayName);
@@ -141,9 +136,9 @@ public class ProfileActivity extends Activity
         ibCleanFullName = (ImageButton) findViewById(R.id.profile_ibClearFullName);
         profile_edDescription = (EditText) findViewById(R.id.profile_edtDescription);
         profile_imageViewAvata = (CircularImageView)findViewById(R.id.profile_ivAvatar);
-        profile_imageViewProfile = (RelativeLayout)findViewById(R.id.profile_rlCoverImage);
+        profile_imageViewProfile = (ImageView)findViewById(R.id.profile_coverImage);
         etCountry.setOnClickListener(clickedCountry);
-        etBirthday.setOnClickListener(setBirthdayDate);
+        edtBirthday.setOnClickListener(setBirthdayDate);
         spListCountry.setOnItemSelectedListener(itemSelect);
         builder = new AlertDialog.Builder(this);
         builder.setTitle("Select Image");
@@ -151,7 +146,7 @@ public class ProfileActivity extends Activity
         dialog = builder.create();
         initialCurrentTime();
         rlCoverImage.setOnClickListener(onClickCoverImage);
-        ibProfileIcon.setOnClickListener(onClickProfileImage);
+        profile_imgAvatar.setOnClickListener(onClickProfileImage);
         ibProfileBack.setOnClickListener(onClickProfileBackImage);
 
         profile_rdFemale = (RadioButton) findViewById(R.id.profile_rdFemale);
@@ -173,7 +168,7 @@ public class ProfileActivity extends Activity
                 final String displayName = etDisplayName.getText().toString();
                 final String fullName = etDisplayName.getText().toString();
                 final String phone = profile_edPhone.getText().toString();
-                final String birthday = etBirthday.getText().toString();
+                final String birthday = edtBirthday.getText().toString();
                 Resources r = getResources();
                 final Long gender;
                 if (profile_rdMale.isChecked())
@@ -269,7 +264,7 @@ public class ProfileActivity extends Activity
         }
         if (birthDay != null)
         {
-            etBirthday.setText(birthDay);
+            edtBirthday.setText(birthDay);
 
         }
         if (description != null)
@@ -291,7 +286,8 @@ public class ProfileActivity extends Activity
         }
         if(url_cover_image != null)
         {
-
+            Image image = new Image(getApplicationContext());
+            image.DisplayImage(url_cover_image,profile_imageViewProfile);
         }
 
     }
@@ -458,7 +454,7 @@ public class ProfileActivity extends Activity
                     Bitmap photo = extras.getParcelable("data");
                     if (!coverOrBackground)
                     {
-                        ibProfileIcon.setImageBitmap(photo);
+                        profile_imgAvatar.setImageBitmap(photo);
                     }
                     else
                     {
@@ -617,7 +613,7 @@ public class ProfileActivity extends Activity
             month = selectedMonth;
             year = selectedYear;
 
-            etBirthday.setText(new StringBuilder().append("").append(selectedDay)
+            edtBirthday.setText(new StringBuilder().append("").append(selectedDay)
                     .append(":").append(selectedMonth + 1).append(":").append(selectedYear)
                     .append(" "));
         }

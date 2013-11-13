@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import com.example.OnlineDio.activity.LoginActivity;
+import com.example.OnlineDio.activity.LoginActivity_;
 
 import static android.accounts.AccountManager.KEY_BOOLEAN_RESULT;
 
@@ -36,7 +37,7 @@ public class OnlineDioAuthenticator extends AbstractAccountAuthenticator
     {
         Log.d("udinic", TAG + "> addAccount");
 
-        final Intent intent = new Intent(mContext, LoginActivity.class);
+        final Intent intent = new Intent(mContext, LoginActivity_.class);
         intent.putExtra(LoginActivity.ARG_ACCOUNT_TYPE, accountType);
         intent.putExtra(LoginActivity.ARG_AUTH_TYPE, authTokenType);
         intent.putExtra(LoginActivity.ARG_IS_ADDING_NEW_ACCOUNT, true);
@@ -107,7 +108,7 @@ public class OnlineDioAuthenticator extends AbstractAccountAuthenticator
         // If we get here, then we couldn't access the user's password - so we
         // need to re-prompt them for their credentials. We do that by creating
         // an intent to display our AuthenticatorActivity.
-        final Intent intent = new Intent(mContext, LoginActivity.class);
+        final Intent intent = new Intent(mContext, LoginActivity_.class);
         intent.putExtra(AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE, response);
         intent.putExtra(LoginActivity.ARG_ACCOUNT_TYPE, account.type);
         intent.putExtra(LoginActivity.ARG_AUTH_TYPE, authTokenType);

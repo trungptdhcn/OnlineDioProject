@@ -1,14 +1,16 @@
 package com.example.OnlineDio.fragment;
 
 import android.app.AlertDialog;
-import android.content.*;
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -21,6 +23,10 @@ import com.example.OnlineDio.R;
 import com.example.OnlineDio.util.CircularImageView;
 import com.example.OnlineDio.util.CropOption;
 import com.example.OnlineDio.util.CropOptionAdapter;
+import com.googlecode.androidannotations.annotations.AfterViews;
+import com.googlecode.androidannotations.annotations.Click;
+import com.googlecode.androidannotations.annotations.EFragment;
+import com.googlecode.androidannotations.annotations.ViewById;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -33,124 +39,120 @@ import java.util.List;
  * Time: 15:57
  * To change this template use File | Settings | File Templates.
  */
+@EFragment(R.layout.content_layout)
 public class ContentFragment extends Fragment
 {
-    private static final String FLAG_DETAIL = "Detail";
-    private static final String FLAG_THUMBNAIL = "Thumbnail";
-    private static final String FLAG_COMMENT = "Comment";
-    private RadioButton content_rbThumbnail;
-    private RadioButton content_rbDetail;
-    private RadioButton content_rbComment;
-    private Handler mHandler = new Handler();
+    @ViewById(R.id.content_rbThumbnail)
+    protected RadioButton content_rbThumbnail;
+
+    @ViewById(R.id.content_rbDetail)
+    protected RadioButton content_rbDetail;
+
+    @ViewById(R.id.content_rbComment)
+    protected RadioButton content_rbComment;
+
+
+    @ViewById(R.id.content_btBack)
+    protected ImageButton content_btBack;
+
+    @ViewById(R.id.content_btnPlay)
+    protected ImageButton content_btnPlay;
+
+    @ViewById(R.id.content_imgAvatar)
+    protected CircularImageView content_imgAvatar;
+
+    ArrayAdapter<String> adapter;
+
+    AlertDialog.Builder builder;
+
     LinearLayout layoutDrawer;
-    private Button content_btBack;
-    private DrawerLayout drawer;
-    private Button content_btnPlay;
-    private CircularImageView mImageView;
-    private FrameLayout content_frame_layout;
-    boolean check_Detail = false;
-    boolean check_Thumbnail = true;
-    boolean check_Comment = false;
-    private String flag;
-    boolean check_play = true;
-    private Uri mImageCaptureUri;
-    private static final int PICK_FROM_CAMERA = 1;
-    private static final int CROP_FROM_CAMERA = 2;
-    private static final int PICK_FROM_FILE = 3;
+    DrawerLayout drawer;
 
-    private Button content_btPlayMusic;
-    private MediaPlayer mediaPlayer;
-    private SeekBar content_SeekbarMusic;
+    protected Uri mImageCaptureUri;
+    protected static final int PICK_FROM_CAMERA = 1;
+    protected static final int CROP_FROM_CAMERA = 2;
+    protected static final int PICK_FROM_FILE = 3;
 
-    private final Handler handler = new Handler();
+    final String[] items = new String[]{"Take from camera", "Select from gallery"};
 
-    public static Fragment newInstance(Context context)
-    {
-        Fragment f = new ContentFragment();
-        return f;
-    }
+    protected Button content_btPlayMusic;
+    protected MediaPlayer mediaPlayer;
+    protected SeekBar content_SeekbarMusic;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        final String[] items = new String[]{"Take from camera", "Select from gallery"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.select_dialog_item, items);
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         View view = inflater.inflate(R.layout.content_layout, container, false);
-        content_rbComment = (RadioButton) view.findViewById(R.id.content_rbComment);
-        content_rbDetail = (RadioButton) view.findViewById(R.id.content_rbDetail);
-        content_btnPlay = (Button) view.findViewById(R.id.content_btnPlay);
-        content_rbThumbnail = (RadioButton) view.findViewById(R.id.content_rbThumbnail);
-        mImageView = (CircularImageView) view.findViewById(R.id.content_imgAvatar);
-        content_btBack = (Button) view.findViewById(R.id.content_btBack);
-        layoutDrawer = (LinearLayout) getActivity().findViewById(R.id.left_drawer);
-
-
         drawer = (DrawerLayout) getActivity().findViewById(R.id.navigation_drawer_layout);
-        content_btBack.setOnClickListener(new View.OnClickListener()
+        return view;
+    }
+
+    @Click({R.id.content_btnPlay, R.id.content_btBack,R.id.content_rbComment,R.id.content_rbDetail,R.id.content_rbThumbnail})
+    void contentButtonClicked(View clickedView)
+    {
+        FragmentTransaction tx = getFragmentManager().beginTransaction();
+        switch (clickedView.getId())
         {
-            @Override
-            public void onClick(View v)
-            {
+            case R.id.content_btnPlay:
+                break;
+            case R.id.content_btBack:
                 getFragmentManager().popBackStack();
-            }
-        });
-        content_rbComment.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                FragmentTransaction tx = getFragmentManager().beginTransaction();
+                break;
+            case R.id.content_rbComment:
                 CommentFragment commentFragment = new CommentFragment();
                 tx.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 tx.replace(R.id.content_frame_layout, commentFragment);
                 tx.commit();
-            }
-        });
-        content_rbDetail.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                FragmentTransaction tx = getFragmentManager().beginTransaction();
+                break;
+            case R.id.content_rbDetail:
                 DetailFragment detailFragment = new DetailFragment();
                 tx.replace(R.id.content_frame_layout, detailFragment);
                 tx.commit();
-            }
-        });
-        content_rbThumbnail.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                FragmentTransaction tx = getFragmentManager().beginTransaction();
+                break;
+            case R.id.content_rbThumbnail:
                 ThumbnailFragment thumbnailFragment = new ThumbnailFragment();
                 tx.replace(R.id.content_frame_layout, thumbnailFragment);
                 tx.commit();
-            }
-        });
+                break;
+        }
+    }
+
+    @AfterViews
+    void afterViews()
+    {
+        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.select_dialog_item, items);
         FragmentTransaction tx = getFragmentManager().beginTransaction();
         ThumbnailFragment thumbnailFragment = new ThumbnailFragment();
         tx.replace(R.id.content_frame_layout, thumbnailFragment);
         tx.commit();
+        createImage();
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        choseWayCreateImage(requestCode, data);
+
+    }
+    //Create Image -======================================================================================
+    protected void createImage()
+    {
+        builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Select Image");
         builder.setAdapter(adapter, new DialogInterface.OnClickListener()
-
         {
             public void onClick(DialogInterface dialog, int item)
-            { //pick from camera
+            {
                 if (item == 0)
                 {
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
                     mImageCaptureUri = Uri.fromFile(new File(Environment.getExternalStorageDirectory(),
                             "tmp_avatar_" + String.valueOf(System.currentTimeMillis()) + ".jpg"));
-
-                    intent.putExtra(android.provider.MediaStore.EXTRA_OUTPUT, mImageCaptureUri);
-
+                    intent.putExtra(MediaStore.EXTRA_OUTPUT, mImageCaptureUri);
                     try
                     {
                         intent.putExtra("return-data", true);
-
                         startActivityForResult(intent, PICK_FROM_CAMERA);
                     }
                     catch (ActivityNotFoundException e)
@@ -159,20 +161,17 @@ public class ContentFragment extends Fragment
                     }
                 }
                 else
-                { //pick from file
+                {
                     Intent intent = new Intent();
-
                     intent.setType("image/*");
                     intent.setAction(Intent.ACTION_GET_CONTENT);
-
                     startActivityForResult(Intent.createChooser(intent, "Complete action using"), PICK_FROM_FILE);
                 }
             }
         }
-
         );
         final AlertDialog dialog = builder.create();
-        mImageView.setOnClickListener(new View.OnClickListener()
+        content_imgAvatar.setOnClickListener(new View.OnClickListener()
 
         {
             @Override
@@ -183,21 +182,8 @@ public class ContentFragment extends Fragment
         }
 
         );
-
-        content_btnPlay.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-
-            }
-        });
-
-        return view;
     }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    protected void choseWayCreateImage(int requestCode, Intent data)
     {
         switch (requestCode)
         {
@@ -220,7 +206,7 @@ public class ContentFragment extends Fragment
                 {
                     Bitmap photo = extras.getParcelable("data");
 
-                    mImageView.setImageBitmap(photo);
+                    content_imgAvatar.setImageBitmap(photo);
                 }
 
                 File f = new File(mImageCaptureUri.getPath());
@@ -229,13 +215,11 @@ public class ContentFragment extends Fragment
                 {
                     f.delete();
                 }
-
                 break;
-
         }
     }
 
-    private void doCrop()
+    protected void doCrop()
     {
         final ArrayList<CropOption> cropOptions = new ArrayList<CropOption>();
 

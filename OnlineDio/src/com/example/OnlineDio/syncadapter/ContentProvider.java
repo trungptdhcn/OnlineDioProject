@@ -93,10 +93,9 @@ public class ContentProvider extends android.content.ContentProvider
             }
             case HOME_PATH_FOR_ID_TOKEN:
             {
-                int homeFeedId = (int) ContentUris.parseId(uri);
                 SQLiteQueryBuilder builder = new SQLiteQueryBuilder();
                 builder.setTables(DbHelper.HOMEFEED_TABLE_NAME);
-                builder.appendWhere(DbHelper.HOMEFEED_COL_ID + "=" + homeFeedId);
+                builder.appendWhere(DbHelper.HOMEFEED_COL_ACCOUNT_ID + "=" + uri.getLastPathSegment());
                 Cursor cur = builder.query(db, projection, selection, selectionArgs, null, null, sortOrder);
                 cur.setNotificationUri(getContext().getContentResolver(), uri);
                 return cur;

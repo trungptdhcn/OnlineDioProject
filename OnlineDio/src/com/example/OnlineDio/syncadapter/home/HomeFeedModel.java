@@ -10,31 +10,67 @@ import com.example.OnlineDio.syncadapter.DbHelper;
  * Time: 21:14
  * To change this template use File | Settings | File Templates.
  */
+//@JsonIgnoreProperties(ignoreUnknown = true)
 public class HomeFeedModel
 {
+//    @JsonProperty("id")
     public Long id;
+
+//    @JsonProperty("account_id")
+    public Long account_id;
+
+//    @JsonProperty("user_id")
     public Long user_id;
+
+//    @JsonProperty("title")
     public String title;
+
+//    @JsonProperty("thumbnail ")
     public String thumbnail;
+
+//    @JsonProperty("description")
     public String desccription;
+
+//    @JsonProperty("sound_path")
     public String sound_path;
+
+//    @JsonProperty("duration")
     public int duration;
+
+//    @JsonProperty("played")
     public boolean played;
+
+//    @JsonProperty("created_at")
     public String created_at;
+
+//    @JsonProperty("updated_at")
     public String updated_at;
+
+//    @JsonProperty("viewed")
     public int viewed;
+
+//    @JsonProperty("username")
     public String username;
+
+//    @JsonProperty("likes")
     public int likes;
+
+//    @JsonProperty("comments")
     public int comments;
+
+//    @JsonProperty("display_name")
     public String display_name;
+
+//    @JsonProperty("avatar")
     public String avatar;
 
-    public HomeFeedModel(Long id, Long user_id, String title, String thumbnail, String desccription,
+    public HomeFeedModel(Long id, Long account_id,Long user_id, String title, String thumbnail, String desccription,
                          String sound_path, int duration, boolean played, String created_at,
                          String updated_at, int viewed, String username, int likes, int comments,
                          String display_name, String avatar)
     {
         this.id = id;
+        this.account_id = account_id;
         this.user_id = user_id;
         this.title = title;
         this.thumbnail = thumbnail;
@@ -57,6 +93,7 @@ public class HomeFeedModel
     public static HomeFeedModel fromCursor(Cursor curHomeFeeds)
     {
         Long id = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_ID));
+        Long account_id = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_ACCOUNT_ID));
         Long user_id = curHomeFeeds.getLong(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_USER_ID));
         String title = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_TITLE));
         String thumbnail = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_THUMBNAIL));
@@ -73,13 +110,23 @@ public class HomeFeedModel
         String displayName = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_DISPLAY_NAME));
         String avatar = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_AVATAR));
 
-        return new HomeFeedModel(id, user_id, title, thumbnail, description, sound_path, duration, played, created_at,
+        return new HomeFeedModel(id, account_id,user_id, title, thumbnail, description, sound_path, duration, played, created_at,
                 updated_at, viewed, userName, likes, comment, displayName, avatar);
     }
 
     public Long getId()
     {
         return id;
+    }
+
+    public Long getAccount_id()
+    {
+        return account_id;
+    }
+
+    public void setAccount_id(Long account_id)
+    {
+        this.account_id = account_id;
     }
 
     public void setId(Long id)

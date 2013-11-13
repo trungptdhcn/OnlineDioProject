@@ -20,6 +20,7 @@ public class DbHelper extends SQLiteOpenHelper
     // DB Table Home
     public static final String HOMEFEED_TABLE_NAME = "homefeed";
     public static final String HOMEFEED_COL_ID = "_id";
+    public static final String HOMEFEED_COL_ACCOUNT_ID = "account_id";
     public static final String HOMEFEED_COL_USER_ID = "user_id";
     public static final String HOMEFEED_COL_TITLE = "title";
     public static final String HOMEFEED_COL_THUMBNAIL = "thumbnail";
@@ -39,6 +40,7 @@ public class DbHelper extends SQLiteOpenHelper
     public static final String HOME_TABLE_CREATE = "create table "
             + HOMEFEED_TABLE_NAME + "(" +
             HOMEFEED_COL_ID + " integer primary key autoincrement, " +
+            HOMEFEED_COL_ACCOUNT_ID+ " integer, "+
             HOMEFEED_COL_USER_ID + " integer, " +
             HOMEFEED_COL_TITLE + " text, " +
             HOMEFEED_COL_THUMBNAIL + " text, " +

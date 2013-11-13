@@ -3,29 +3,34 @@ package com.example.OnlineDio.fragment;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Activity;
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.ContentResolver;
-import android.content.SyncStatusObserver;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.content.Loader;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SimpleCursorAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.example.OnlineDio.R;
-import com.example.OnlineDio.auth.OnlineDioAccountGeneral;
+import com.example.OnlineDio.activity.NavigationActivity;
 import com.example.OnlineDio.syncadapter.DbHelper;
 import com.example.OnlineDio.syncadapter.ProviderContract;
-import com.example.OnlineDio.util.ListViewCustomerAdapter;
+import com.example.OnlineDio.util.HomeFeedAdapter;
+import com.example.OnlineDio.utilities.Constant;
+import com.example.OnlineDio.utilities.NetworkUtil;
+import com.googlecode.androidannotations.annotations.*;
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 
 /**
  * Created with IntelliJ IDEA.
@@ -34,35 +39,42 @@ import com.example.OnlineDio.util.ListViewCustomerAdapter;
  * Time: 14:10
  * To change this template use File | Settings | File Templates.
  */
-public class HomeFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>
+
+@EFragment(R.layout.home)
+public class HomeFragment extends Fragment implements PullToRefreshAttacher.OnRefreshListener
 {
-    ListView lisView;
-    private ImageButton home_ibOption;
-    private LinearLayout layoutDrawer;
-    private Account mConnectedAccount;
-    private AccountManager accountManager;
-    private SimpleCursorAdapter mAdapter;
-    private ImageButton home_ibNotify;
-    String[] PROJECTION = new String[]
-            {
-                    DbHelper.HOMEFEED_COL_ID,
-                    DbHelper.HOMEFEED_COL_USER_ID,
-                    DbHelper.HOMEFEED_COL_TITLE,
-                    DbHelper.HOMEFEED_COL_THUMBNAIL,
-                    DbHelper.HOMEFEED_COL_DESCRIPTION,
-                    DbHelper.HOMEFEED_COL_SOUND_PATH,
-                    DbHelper.HOMEFEED_COL_DURATION,
-                    DbHelper.HOMEFEED_COL_PLAYED,
-                    DbHelper.HOMEFEED_COL_CREATED_AT,
-                    DbHelper.HOMEFEED_COL_UPDATED_AT,
-                    DbHelper.HOMEFEED_COL_LIKES,
-                    DbHelper.HOMEFEED_COL_VIEWED,
-                    DbHelper.HOMEFEED_COL_COMMENTS,
-                    DbHelper.HOMEFEED_COL_USERNAME,
-                    DbHelper.HOMEFEED_COL_DISPLAY_NAME,
-                    DbHelper.HOMEFEED_COL_AVATAR
-            } ;
-    String[] FROM_COLUMS = new String[]{
+    @ViewById(R.id.lvListSongs)
+    protected static ListView home_lvFeeds;
+
+    @ViewById(R.id.ibOption)
+    protected ImageButton home_ibOption;
+
+    protected LinearLayout layoutDrawer;
+    DrawerLayout drawer;
+
+    protected Account mConnectedAccount;
+
+    @SystemService
+    protected AccountManager accountManager;
+
+    protected static HomeFeedAdapter mAdapter;
+
+    protected PullToRefreshAttacher mPullToRefreshAttacher;
+
+    @ViewById(R.id.ibDone)
+    protected ImageButton home_ibNotify;
+
+    @FragmentArg(AccountManager.KEY_AUTHTOKEN)
+    String authToken;
+
+    @FragmentArg(AccountManager.KEY_ACCOUNT_NAME)
+    String accountName;
+
+    @FragmentArg("user_id")
+    String user_id;
+
+    public static final int SIMULATED_REFRESH_LENGTH = 5000;
+    protected static String[] FROM_COLUMS = new String[]{
             DbHelper.HOMEFEED_COL_TITLE,
             DbHelper.HOMEFEED_COL_DISPLAY_NAME,
             DbHelper.HOMEFEED_COL_COMMENTS,
@@ -70,23 +82,163 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
             DbHelper.HOMEFEED_COL_UPDATED_AT,
             DbHelper.HOMEFEED_COL_AVATAR
     };
-//    private static final int[] TO_FIELDS = new int[]{
-//            R.id.text1,
-//            android.R.id.text2
-//    };
 
-    private Object mSyncObserverHandle;
+    protected static Cursor cur;
+
+    protected static Dialog myPd_ring;
+    public static Handler handler = new Handler()
+    {
+        @Override
+        public void handleMessage(Message msg)
+        {
+            if (msg.getData().getString("ok") != null)
+            {
+                setListHomeFeed(ProviderContract.CONTENT_URI);
+                myPd_ring.dismiss();
+            }
+        }
+    };
 
     @Override
     public void onAttach(Activity activity)
     {
         super.onAttach(activity);
-//        syncAdapter();
+        myPd_ring = new ProgressDialog(getActivity());
+        synBeforeViewList();
     }
 
-    private void syncAdapter()
+    @Override
+    public void onCreate(Bundle savedInstanceState)
     {
-        String accountName = this.getArguments().getString(AccountManager.KEY_ACCOUNT_NAME);
+        super.onCreate(savedInstanceState);
+    }
+
+    @UiThread
+    protected void synBeforeViewList()
+    {
+        if (checkNetwork())
+        {
+            myPd_ring.show();
+            syncAdapter();
+        }
+        else
+        {
+            Toast.makeText(getActivity(), "Check network connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        View view = inflater.inflate(R.layout.home, container, false);
+        home_lvFeeds = (ListView) view.findViewById(R.id.lvListSongs);
+        drawer = (DrawerLayout) getActivity().findViewById(R.id.navigation_drawer_layout);
+        layoutDrawer = (LinearLayout) getActivity().findViewById(R.id.left_drawer);
+        mPullToRefreshAttacher = ((NavigationActivity) getActivity()).getNavigationController().getPullToRefreshAttacher();
+//        Uri queryUri = ProviderContract.CONTENT_URI.buildUpon().appendPath(getArguments().getString("user_id")).build();
+        Uri queryUri = ProviderContract.CONTENT_URI.buildUpon().appendPath(user_id).build();
+        cur = NavigationActivity.context.getContentResolver().query(queryUri,
+                null, null, null, null);
+        if (cur.moveToFirst())
+        {
+            mAdapter = new HomeFeedAdapter(NavigationActivity.context, R.layout.home_row_of_listview2,
+                    cur, FROM_COLUMS, new int[]{R.id.tvTitleOfSong, R.id.tvNameOfDirector,
+                    R.id.tvNumberOfComment, R.id.tvNumberOfLiked,
+                    R.id.tvNumberOfPostedDay, R.id.ivAvatars}, 0);
+//            mAdapter.setCursor(cur);
+            home_lvFeeds.setAdapter(mAdapter);
+        }
+        syncAdapter();
+        return view;
+    }
+
+    @AfterViews
+    void afterViews()
+    {
+        mPullToRefreshAttacher.addRefreshableView(home_lvFeeds, this);
+    }
+
+    @ItemClick(R.id.lvListSongs)
+    void listHomeFeedsCliked()
+    {
+        FragmentTransaction tx = getActivity().getSupportFragmentManager().beginTransaction();
+        tx.addToBackStack(null);
+        tx.commit();
+        tx.replace(R.id.navigation_main_FrameLayout, new ContentFragment_());
+    }
+
+    protected static void setListHomeFeed(Uri queryUri)
+    {
+        cur = NavigationActivity.context.getContentResolver().query(queryUri,
+                null, null, null, null);
+            mAdapter = new HomeFeedAdapter(NavigationActivity.context, R.layout.home_row_of_listview2,
+                    cur, FROM_COLUMS, new int[]{R.id.tvTitleOfSong, R.id.tvNameOfDirector,
+                    R.id.tvNumberOfComment, R.id.tvNumberOfLiked,
+                    R.id.tvNumberOfPostedDay, R.id.ivAvatars}, 0);
+//        mAdapter.setCursor(cur);
+        home_lvFeeds.setAdapter(mAdapter);
+    }
+
+    @Click({R.id.ibOption})
+    void homeButtonClicked(View clickedView)
+    {
+        switch (clickedView.getId())
+        {
+            case R.id.ibOption:
+                drawer.openDrawer(layoutDrawer);
+        }
+    }
+
+    @Override
+    public void onRefreshStarted(View view)
+    {
+        backgroundRefresh();
+    }
+
+    @Background
+    void backgroundRefresh()
+    {
+        try
+        {
+            Thread.sleep(SIMULATED_REFRESH_LENGTH);
+            syncAdapter();
+        }
+        catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+        uiUpdate();
+    }
+
+    @UiThread
+    void uiUpdate()
+    {
+        mPullToRefreshAttacher.setRefreshComplete();
+    }
+
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+    }
+
+
+    //synAdapter ============================
+    protected boolean checkNetwork()
+    {
+        Log.i("CheckNetwork", "Check network available");
+        boolean result = true;
+        String status = NetworkUtil.getConnectivityStatusString(NavigationActivity.context);
+        if (status.equals(Constant.NOT_CONNECTED_TO_INTERNET.getValue()))
+        {
+            result = false;
+        }
+        return result;
+    }
+
+    protected void syncAdapter()
+    {
         accountManager = AccountManager.get(getActivity());
         mConnectedAccount = new Account(accountName, "com.example.OnlineDio");
         String authority = ProviderContract.AUTHORITY;
@@ -95,147 +247,4 @@ public class HomeFragment extends Fragment implements LoaderManager.LoaderCallba
         bundle.putBoolean(ContentResolver.SYNC_EXTRAS_EXPEDITED, true);
         ContentResolver.requestSync(mConnectedAccount, authority, bundle);
     }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
-        View view = inflater.inflate(R.layout.home, container, false);
-        syncAdapter();
-        lisView = (ListView) view.findViewById(R.id.lvListSongs);
-        home_ibOption = (ImageButton) view.findViewById(R.id.ibOption);
-        layoutDrawer = (LinearLayout) getActivity().findViewById(R.id.left_drawer);
-        home_ibNotify = (ImageButton)view.findViewById(R.id.ibDone);
-        home_ibNotify.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                syncAdapter();
-            }
-        });
-        Cursor cur = getActivity().getContentResolver().query(ProviderContract.CONTENT_URI, null, null, null, null);
-        mAdapter = new ListViewCustomerAdapter(getActivity(), R.layout.home_row_of_listview2,
-                cur, FROM_COLUMS, new int[]{R.id.tvTitleOfSong, R.id.tvNameOfDirector,
-                R.id.tvNumberOfComment, R.id.tvNumberOfLiked,
-                R.id.tvNumberOfPostedDay,R.id.ivAvatars},0);
-        mAdapter.setViewBinder(new SimpleCursorAdapter.ViewBinder()
-        {
-            @Override
-            public boolean setViewValue(View view, Cursor cursor, int i)
-            {
-                if (i == 16)
-                {
-                    // Convert timestamp to human-readable date
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        });
-        lisView.setAdapter(mAdapter);
-        getLoaderManager().initLoader(0, null, this);
-        String authToken = accountManager.peekAuthToken(mConnectedAccount, OnlineDioAccountGeneral.AUTHTOKEN_TYPE_FULL_ACCESS);
-        lisView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-        {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, final int pos, long id)
-            {
-                FragmentTransaction tx = getActivity().getSupportFragmentManager().beginTransaction();
-                tx.replace(R.id.navigation_main_FrameLayout, new ContentFragment());
-                tx.addToBackStack(null);
-                tx.commit();
-            }
-        });
-        final DrawerLayout drawer = (DrawerLayout) getActivity().findViewById(R.id.navigation_drawer_layout);
-        home_ibOption.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                drawer.openDrawer(layoutDrawer);
-            }
-        });
-
-
-        return view;
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        if (mSyncObserverHandle != null) {
-            ContentResolver.removeStatusChangeListener(mSyncObserverHandle);
-            mSyncObserverHandle = null;
-        }
-    }
-
-    @Override
-    public void onResume()
-    {
-        super.onResume();
-        mSyncStatusObserver.onStatusChanged(0);
-
-        // Watch for sync state changes
-        final int mask = ContentResolver.SYNC_OBSERVER_TYPE_PENDING |
-                ContentResolver.SYNC_OBSERVER_TYPE_ACTIVE;
-        mSyncObserverHandle = ContentResolver.addStatusChangeListener(mask, mSyncStatusObserver);
-    }
-
-    private SyncStatusObserver mSyncStatusObserver = new SyncStatusObserver()
-    {
-        /** Callback invoked with the sync adapter status changes. */
-        @Override
-        public void onStatusChanged(int which)
-        {
-            getActivity().runOnUiThread(new Runnable()
-            {
-                /**
-                 * The SyncAdapter runs on a background thread. To update the UI, onStatusChanged()
-                 * runs on the UI thread.
-                 */
-                @Override
-                public void run()
-                {
-                    // Create a handle to the account that was created by
-                    // SyncService.CreateSyncAccount(). This will be used to query the system to
-                    // see how the sync status has changed.
-                    Account account = mConnectedAccount;
-                    if (account == null)
-                    {
-                        // GetAccount() returned an invalid value. This shouldn't happen, but
-                        // we'll set the status to "not refreshing".
-                        return;
-                    }
-
-                    // Test the ContentResolver to see if the sync adapter is active or pending.
-                    // Set the state of the refresh button accordingly.
-                    boolean syncActive = ContentResolver.isSyncActive(
-                            account, ProviderContract.AUTHORITY);
-                    boolean syncPending = ContentResolver.isSyncPending(
-                            account, ProviderContract.AUTHORITY);
-                }
-            });
-        }
-    };
-
-    @Override
-    public Loader<Cursor> onCreateLoader(int i, Bundle bundle)
-    {
-        return new CursorLoader(getActivity(), ProviderContract.CONTENT_URI, PROJECTION, null, null, null);
-    }
-
-    @Override
-    public void onLoadFinished(Loader<Cursor> loader, Cursor data)
-    {
-        mAdapter.changeCursor(data);
-    }
-
-    @Override
-    public void onLoaderReset(Loader<Cursor> loader)
-    {
-        mAdapter.changeCursor(null);
-    }
-
 }

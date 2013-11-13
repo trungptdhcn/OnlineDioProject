@@ -18,7 +18,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:background="@drawable/navbar_1"
+                    android:background="@drawable/navbar1"
                     android:layout_alignParentTop="true" android:id="@+id/profile_bar">
                 <ImageButton
                         android:layout_width="wrap_content"
@@ -48,24 +48,28 @@
                         />
             </RelativeLayout>
             <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="false" android:background="@drawable/cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="false"
                     android:id="@+id/profile_rlCoverImage"
-                    android:layout_marginLeft="@dimen/profile_marginLeft_rlProfileBar"
-                    android:layout_marginRight="@dimen/profile_marginRight_rlProfileBar"
                     android:layout_below="@+id/profile_bar">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/cover_image"
+                        android:id="@+id/profile_coverImage"
+                        />
                 <com.example.OnlineDio.util.CircularImageView
                         android:id="@+id/profile_ivAvatar"
-                        android:layout_width="@dimen/profile_width_customerProfileIcon"
-                        android:layout_height="@dimen/profile_height_customerProfileIcon"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
                         android:background="@drawable/profile_icon"
-                        android:src="@drawable/profile_icon"
                         android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="@dimen/profile_marginLeft_customerProfileIcon"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginTop="@dimen/profile_marginTop_customerProfileIcon"/>
-
+                        android:layout_marginLeft="9dp"
+                        android:layout_alignParentBottom="true"
+                        />
             </RelativeLayout>
             <RelativeLayout
                     android:layout_width="fill_parent"
@@ -244,7 +248,7 @@
                             android:focusable="false"
                             android:inputType="date"
                             android:textSize="@dimen/profile_textSize_etBirthday"
-                            android:id="@+id/profile_dpBirthday" android:layout_gravity="center_horizontal"
+                            android:id="@+id/profile_edtBirthday" android:layout_gravity="center_horizontal"
                             android:layout_alignLeft="@+id/profile_etFullName"
                             android:layout_below="@+id/viewBelowPhone"/>
                     <View

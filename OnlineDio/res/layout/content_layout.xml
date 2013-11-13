@@ -8,14 +8,17 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/navbar_1" android:minHeight="35dp">
-        <Button
+            android:background="@drawable/navbar1" android:minHeight="35dp">
+        <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:id="@+id/content_btBack" android:layout_alignParentLeft="true"
-                android:background="@drawable/common_custom_btnback" android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+                android:id="@+id/content_btBack"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/common_custom_btnback"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -150,21 +153,21 @@
                     android:background="@drawable/content_custom_cblike"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"/>
-            <Button
+            <ImageButton
                     android:id="@+id/content_btList"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/content_buttonlist"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"/>
-            <Button
+            <ImageButton
                     android:id="@+id/content_btTwitter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/content_custom_buttontwitter"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"/>
-            <Button
+            <ImageButton
                     android:id="@+id/content_btFacebook"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -183,7 +186,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/content_iconbuttonplay">
-            <Button
+            <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/content_btnPlay"
