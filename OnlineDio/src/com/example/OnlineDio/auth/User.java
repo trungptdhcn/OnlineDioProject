@@ -1,5 +1,7 @@
 package com.example.OnlineDio.auth;
 
+import java.util.ArrayList;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Trung
@@ -7,12 +9,27 @@ package com.example.OnlineDio.auth;
  * Time: 20:33
  * To change this template use File | Settings | File Templates.
  */
+//@JsonIgnoreProperties(ignoreUnknown = true)
 public class User
 {
+    //    @JsonProperty("user_id")
+    private String code;
+
+    private String status ;
+
+    ArrayList<String>  message;
+
     private String user_id;
+//    @JsonProperty("access_token")
     private String access_token;
+
+//    @JsonProperty("client_id")
     private String client_id;
+
+//    @JsonProperty("expires")
     private String expires;
+
+//    @JsonProperty("scope")
     private String scope;
 
     public String getUser_id()
@@ -63,5 +80,35 @@ public class User
     public void setScope(String scope)
     {
         this.scope = scope;
+    }
+
+    public String getCode()
+    {
+        return code;
+    }
+
+    public void setCode(String code)
+    {
+        this.code = code;
+    }
+
+    public String getStatus()
+    {
+        return status;
+    }
+
+    public void setStatus(String status)
+    {
+        this.status = status;
+    }
+
+    public ArrayList<String> getMessage()
+    {
+        return message;
+    }
+
+    public void setMessage(ArrayList<String> message)
+    {
+        this.message = message;
     }
 }

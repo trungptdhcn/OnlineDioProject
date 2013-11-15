@@ -8,6 +8,10 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.example.OnlineDio.activity.LoginActivity;
 import com.example.OnlineDio.activity.LoginActivity_;
+import com.example.OnlineDio.network.ParseInServer;
+import com.example.OnlineDio.network.model.RequestAuthModel;
+import com.googlecode.androidannotations.annotations.EBean;
+import com.googlecode.androidannotations.annotations.rest.RestService;
 
 import static android.accounts.AccountManager.KEY_BOOLEAN_RESULT;
 
@@ -18,17 +22,19 @@ import static android.accounts.AccountManager.KEY_BOOLEAN_RESULT;
  * Time: 20:28
  * To change this template use File | Settings | File Templates.
  */
+@EBean
 public class OnlineDioAuthenticator extends AbstractAccountAuthenticator
 {
 
-    private String TAG = "UdinicAuthenticator";
-    private final Context mContext;
+    @RestService
+    ParseInServer parseInServer;
+
+    protected String TAG = "UdinicAuthenticator";
+    protected final Context mContext;
 
     public OnlineDioAuthenticator(Context context)
     {
         super(context);
-
-        // I hate you! Google - set mContext as protected!
         this.mContext = context;
     }
 
@@ -80,8 +86,20 @@ public class OnlineDioAuthenticator extends AbstractAccountAuthenticator
             {
                 try
                 {
+//                    JSONObject json = new JSONObject();
+//                    json.put("username", account.name);
+//                    json.put("password", password);
+//                    json.put("grant_type", "password");
+//                    json.put("client_id", "123456789");
                     Log.d("udinic", TAG + "> re-authenticating with the existing password");
-                    User user = OnlineDioAccountGeneral.sServerAuthenticate.userSignIn(account.name, password, authTokenType);
+//                    User user = OnlineDioAccountGeneral.sServerAuthenticate.userSignIn(account.name, password, authTokenType);
+//                    RequestAuthModel requestData = new RequestAuthModel();
+//                    requestData.setUsername(account.name);
+//                    requestData.setPassword(password);
+//                    requestData.setGrant_type("password");
+//                    requestData.setClient_id("123456789");
+                    RequestAuthModel requestData = new RequestAuthModel(account.name,password,"password","123456789");
+                    User user = getUserData(requestData);
                     if (user != null)
                     {
                         authToken = user.getAccess_token();
@@ -159,5 +177,11 @@ public class OnlineDioAuthenticator extends AbstractAccountAuthenticator
     public Bundle updateCredentials(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options) throws NetworkErrorException
     {
         return null;
+    }
+
+    User getUserData(RequestAuthModel requestData)
+    {
+       User user = parseInServer.userSignIn(requestData);
+       return user;
     }
 }

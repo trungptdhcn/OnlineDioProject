@@ -1,12 +1,13 @@
 package com.example.OnlineDio.activity;
 
 import android.accounts.AccountAuthenticatorActivity;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import com.example.OnlineDio.R;
 import com.example.OnlineDio.controller.LoginController;
 import com.googlecode.androidannotations.annotations.*;
+
+import java.io.UnsupportedEncodingException;
 
 @NoTitle
 @EActivity(R.layout.login)
@@ -41,7 +42,14 @@ public class LoginActivity extends AccountAuthenticatorActivity
     @Click({R.id.login_btDone})
     void buttonClick()
     {
-        loginController.submit();
+        try
+        {
+            loginController.submit();
+        }
+        catch (UnsupportedEncodingException e)
+        {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
     }
 
     public EditText getLogin_edEmail()

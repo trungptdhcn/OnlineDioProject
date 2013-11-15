@@ -37,11 +37,11 @@ public final class LoginActivity_
     }
 
     private void afterSetContentView_() {
-        login_btDone = ((ImageButton) findViewById(id.login_btDone));
-        login_edPass = ((EditText) findViewById(id.login_et_Pass));
         login_btBack = ((ImageButton) findViewById(id.login_btBack));
-        login_iv_cancelOfEmail = ((ImageButton) findViewById(id.login_ib_cancelOfEmail));
+        login_btDone = ((ImageButton) findViewById(id.login_btDone));
         login_iv_cancelOfPass = ((ImageButton) findViewById(id.login_ib_cancelOfPass));
+        login_edPass = ((EditText) findViewById(id.login_et_Pass));
+        login_iv_cancelOfEmail = ((ImageButton) findViewById(id.login_ib_cancelOfEmail));
         login_edEmail = ((EditText) findViewById(id.login_et_email));
         {
             View view = findViewById(id.login_btDone);

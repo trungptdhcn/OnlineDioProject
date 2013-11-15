@@ -3,6 +3,8 @@ package com.example.OnlineDio.syncadapter.home;
 import android.database.Cursor;
 import com.example.OnlineDio.syncadapter.DbHelper;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Trung
@@ -11,7 +13,7 @@ import com.example.OnlineDio.syncadapter.DbHelper;
  * To change this template use File | Settings | File Templates.
  */
 //@JsonIgnoreProperties(ignoreUnknown = true)
-public class HomeFeedModel
+public class HomeFeedModel implements Serializable
 {
 //    @JsonProperty("id")
     public Long id;
@@ -29,7 +31,7 @@ public class HomeFeedModel
     public String thumbnail;
 
 //    @JsonProperty("description")
-    public String desccription;
+    public String description;
 
 //    @JsonProperty("sound_path")
     public String sound_path;
@@ -38,7 +40,7 @@ public class HomeFeedModel
     public int duration;
 
 //    @JsonProperty("played")
-    public boolean played;
+    public String played;
 
 //    @JsonProperty("created_at")
     public String created_at;
@@ -64,8 +66,12 @@ public class HomeFeedModel
 //    @JsonProperty("avatar")
     public String avatar;
 
+    public HomeFeedModel()
+    {
+
+    }
     public HomeFeedModel(Long id, Long account_id,Long user_id, String title, String thumbnail, String desccription,
-                         String sound_path, int duration, boolean played, String created_at,
+                         String sound_path, int duration, String played, String created_at,
                          String updated_at, int viewed, String username, int likes, int comments,
                          String display_name, String avatar)
     {
@@ -74,7 +80,7 @@ public class HomeFeedModel
         this.user_id = user_id;
         this.title = title;
         this.thumbnail = thumbnail;
-        this.desccription = desccription;
+        this.description = desccription;
         this.sound_path = sound_path;
         this.duration = duration;
         this.played = played;
@@ -100,7 +106,7 @@ public class HomeFeedModel
         String description = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_DESCRIPTION));
         String sound_path = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_SOUND_PATH));
         int duration = curHomeFeeds.getInt(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_DURATION));
-        boolean played = curHomeFeeds.getInt(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_PLAYED)) > 0;
+        String played = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_PLAYED));
         String created_at = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_CREATED_AT));
         String updated_at = curHomeFeeds.getString(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_UPDATED_AT));
         int likes = curHomeFeeds.getInt(curHomeFeeds.getColumnIndex(DbHelper.HOMEFEED_COL_LIKES));
@@ -166,12 +172,12 @@ public class HomeFeedModel
 
     public String getDesccription()
     {
-        return desccription;
+        return description;
     }
 
     public void setDesccription(String desccription)
     {
-        this.desccription = desccription;
+        this.description = desccription;
     }
 
     public String getSound_path()
@@ -194,12 +200,12 @@ public class HomeFeedModel
         this.duration = duration;
     }
 
-    public boolean isPlayed()
+    public String isPlayed()
     {
         return played;
     }
 
-    public void setPlayed(boolean played)
+    public void setPlayed(String played)
     {
         this.played = played;
     }

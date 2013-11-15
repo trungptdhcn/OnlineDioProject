@@ -3,6 +3,8 @@ package com.example.OnlineDio.syncadapter.home;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import com.googlecode.androidannotations.annotations.Bean;
+import com.googlecode.androidannotations.annotations.EService;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,10 +13,13 @@ import android.os.IBinder;
  * Time: 21:16
  * To change this template use File | Settings | File Templates.
  */
+@EService
 public class HomeFeedSynService extends Service
 {
-    private static final Object sSyncAdapterLock = new Object();
-    private static HomeFeedSynAdapter sSyncAdapter = null;
+    public static final Object sSyncAdapterLock = new Object();
+    //    private static HomeFeedSynAdapter sSyncAdapter = null;
+    @Bean
+    public static HomeFeedSynAdapter sSyncAdapter;
 
     @Override
     public void onCreate()
@@ -23,7 +28,7 @@ public class HomeFeedSynService extends Service
         {
             if (sSyncAdapter == null)
             {
-                sSyncAdapter = new HomeFeedSynAdapter(getApplicationContext(), true);
+                sSyncAdapter = new HomeFeedSynAdapter(getApplicationContext());
             }
         }
     }

@@ -1,6 +1,6 @@
 package com.example.OnlineDio.network.impl;
 
-//import com.example.OnlineDio.network.HomeParseFeedInService;
+//import com.example.OnlineDio.network.ParseInServer;
 
 import com.googlecode.androidannotations.annotations.EBean;
 
@@ -16,6 +16,6 @@ public class NetWorkUntils
 {
 
 //    @RestService
-//    HomeParseFeedInService homeParseFeedInService;
+//    ParseInServer parseInServer;
 //    public
 }

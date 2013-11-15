@@ -40,9 +40,9 @@ public final class HomeFragment_
     }
 
     private void afterSetContentView_() {
-        home_ibOption = ((ImageButton) findViewById(com.example.OnlineDio.R.id.ibOption));
         home_ibNotify = ((ImageButton) findViewById(com.example.OnlineDio.R.id.ibDone));
         home_lvFeeds = ((ListView) findViewById(com.example.OnlineDio.R.id.lvListSongs));
+        home_ibOption = ((ImageButton) findViewById(com.example.OnlineDio.R.id.ibOption));
         {
             View view = findViewById(com.example.OnlineDio.R.id.ibOption);
             if (view!= null) {
@@ -105,9 +105,9 @@ public final class HomeFragment_
     private void injectFragmentArguments_() {
         Bundle args_ = getArguments();
         if (args_!= null) {
-            if (args_.containsKey("authAccount")) {
+            if (args_.containsKey("authtoken")) {
                 try {
-                    accountName = args_.getString("authAccount");
+                    authToken = args_.getString("authtoken");
                 } catch (ClassCastException e) {
                     Log.e("HomeFragment_", "Could not cast argument to the expected type, the field is left to its default value", e);
                 }
@@ -119,32 +119,14 @@ public final class HomeFragment_
                     Log.e("HomeFragment_", "Could not cast argument to the expected type, the field is left to its default value", e);
                 }
             }
-            if (args_.containsKey("authtoken")) {
+            if (args_.containsKey("authAccount")) {
                 try {
-                    authToken = args_.getString("authtoken");
+                    accountName = args_.getString("authAccount");
                 } catch (ClassCastException e) {
                     Log.e("HomeFragment_", "Could not cast argument to the expected type, the field is left to its default value", e);
                 }
             }
         }
-    }
-
-    @Override
-    public void uiUpdate() {
-        handler_.post(new Runnable() {
-
-
-            @Override
-            public void run() {
-                try {
-                    HomeFragment_.super.uiUpdate();
-                } catch (RuntimeException e) {
-                    Log.e("HomeFragment_", "A runtime exception was thrown while executing code in a runnable", e);
-                }
-            }
-
-        }
-        );
     }
 
     @Override
@@ -156,6 +138,24 @@ public final class HomeFragment_
             public void run() {
                 try {
                     HomeFragment_.super.synBeforeViewList();
+                } catch (RuntimeException e) {
+                    Log.e("HomeFragment_", "A runtime exception was thrown while executing code in a runnable", e);
+                }
+            }
+
+        }
+        );
+    }
+
+    @Override
+    public void uiUpdate() {
+        handler_.post(new Runnable() {
+
+
+            @Override
+            public void run() {
+                try {
+                    HomeFragment_.super.uiUpdate();
                 } catch (RuntimeException e) {
                     Log.e("HomeFragment_", "A runtime exception was thrown while executing code in a runnable", e);
                 }
@@ -197,8 +197,8 @@ public final class HomeFragment_
             return fragment_;
         }
 
-        public HomeFragment_.FragmentBuilder_ accountName(String accountName) {
-            args_.putString("authAccount", accountName);
+        public HomeFragment_.FragmentBuilder_ authToken(String authToken) {
+            args_.putString("authtoken", authToken);
             return this;
         }
 
@@ -207,8 +207,8 @@ public final class HomeFragment_
             return this;
         }
 
-        public HomeFragment_.FragmentBuilder_ authToken(String authToken) {
-            args_.putString("authtoken", authToken);
+        public HomeFragment_.FragmentBuilder_ accountName(String accountName) {
+            args_.putString("authAccount", accountName);
             return this;
         }
 

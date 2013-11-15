@@ -39,10 +39,10 @@ public final class NavigationActivity_
     }
 
     private void afterSetContentView_() {
-        llProfile = ((LinearLayout) findViewById(com.example.OnlineDio.R.id.navigation_station_layout));
-        navList = ((ListView) findViewById(com.example.OnlineDio.R.id.navigation_lvDrawer));
-        layoutDrawer = ((LinearLayout) findViewById(com.example.OnlineDio.R.id.left_drawer));
         drawer = ((DrawerLayout) findViewById(com.example.OnlineDio.R.id.navigation_drawer_layout));
+        navList = ((ListView) findViewById(com.example.OnlineDio.R.id.navigation_lvDrawer));
+        llProfile = ((LinearLayout) findViewById(com.example.OnlineDio.R.id.navigation_station_layout));
+        layoutDrawer = ((LinearLayout) findViewById(com.example.OnlineDio.R.id.left_drawer));
         {
             View view = findViewById(com.example.OnlineDio.R.id.navigation_station_layout);
             if (view!= null) {

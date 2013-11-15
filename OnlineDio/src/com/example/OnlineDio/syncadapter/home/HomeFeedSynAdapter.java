@@ -12,8 +12,11 @@ import android.util.Log;
 import com.example.OnlineDio.auth.OnlineDioAccountGeneral;
 import com.example.OnlineDio.auth.ParseComError;
 import com.example.OnlineDio.fragment.HomeFragment;
+import com.example.OnlineDio.network.impl.HomeParseFeedInServiceImpl;
 import com.example.OnlineDio.syncadapter.DbHelper;
 import com.example.OnlineDio.syncadapter.ProviderContract;
+import com.googlecode.androidannotations.annotations.Bean;
+import com.googlecode.androidannotations.annotations.EBean;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,6 +28,7 @@ import java.util.HashMap;
  * Time: 21:15
  * To change this template use File | Settings | File Templates.
  */
+@EBean
 public class HomeFeedSynAdapter extends AbstractThreadedSyncAdapter
 {
     private static final String TAG = "HomeFeedSyncAdapter";
@@ -32,9 +36,12 @@ public class HomeFeedSynAdapter extends AbstractThreadedSyncAdapter
     private final AccountManager mAccountManager;
     private final ContentResolver mContentResolver;
 
-    public HomeFeedSynAdapter(Context context, boolean autoInitialize)
+    @Bean
+    HomeParseFeedInServiceImpl homeParseFeedInService;
+
+    public HomeFeedSynAdapter(Context context)
     {
-        super(context, autoInitialize);
+        super(context, true);
         mContentResolver = context.getContentResolver();
         mAccountManager = AccountManager.get(context);
     }
@@ -46,21 +53,28 @@ public class HomeFeedSynAdapter extends AbstractThreadedSyncAdapter
         try
         {
             Log.i(TAG, "Perform sync data");
-
             //get auth token
             String authToken = mAccountManager.peekAuthToken(account,
                     OnlineDioAccountGeneral.AUTHTOKEN_TYPE_FULL_ACCESS);
             String account_id = mAccountManager.getUserData(account, "user_id");
 
             Log.i(TAG, "Get data from server");
-            ParseHomeFeedInServer parseComService = new ParseHomeFeedInServer();
-            Object remoteDataObject = parseComService.getShows(authToken);
+//            ParseHomeFeedInServer parseComService = new ParseHomeFeedInServer();
+//            Object remoteDataObject = parseComService.getShows(authToken);
+//            if (remoteDataObject instanceof ParseComError)
+//            {
+//                mAccountManager.invalidateAuthToken(account.type, authToken);
+//                String newToken = mAccountManager.getAuthToken(account, OnlineDioAccountGeneral.AUTHTOKEN_TYPE_FULL_ACCESS, true, null, null)
+//                        .getResult().getString(AccountManager.KEY_AUTHTOKEN);
+//                remoteDataObject = parseComService.getShows(newToken);
+//            }
+            Object remoteDataObject = homeParseFeedInService.getListHomeFeeds(authToken);
             if (remoteDataObject instanceof ParseComError)
             {
                 mAccountManager.invalidateAuthToken(account.type, authToken);
                 String newToken = mAccountManager.getAuthToken(account, OnlineDioAccountGeneral.AUTHTOKEN_TYPE_FULL_ACCESS, true, null, null)
                         .getResult().getString(AccountManager.KEY_AUTHTOKEN);
-                remoteDataObject = parseComService.getShows(newToken);
+                remoteDataObject = homeParseFeedInService.getListHomeFeeds(newToken);
             }
             ArrayList<HomeFeedModel> remoteData = (ArrayList<HomeFeedModel>) remoteDataObject;
             ArrayList<ContentProviderOperation> batch = new ArrayList<ContentProviderOperation>();
@@ -96,7 +110,7 @@ public class HomeFeedSynAdapter extends AbstractThreadedSyncAdapter
                                 .withValue(DbHelper.HOMEFEED_COL_USER_ID, checkUpdate.user_id)
                                 .withValue(DbHelper.HOMEFEED_COL_TITLE, checkUpdate.title)
                                 .withValue(DbHelper.HOMEFEED_COL_THUMBNAIL, checkUpdate.thumbnail)
-                                .withValue(DbHelper.HOMEFEED_COL_DESCRIPTION, checkUpdate.desccription)
+                                .withValue(DbHelper.HOMEFEED_COL_DESCRIPTION, checkUpdate.description)
                                 .withValue(DbHelper.HOMEFEED_COL_SOUND_PATH, checkUpdate.sound_path)
                                 .withValue(DbHelper.HOMEFEED_COL_DURATION, checkUpdate.duration)
                                 .withValue(DbHelper.HOMEFEED_COL_PLAYED, checkUpdate.played)
@@ -135,7 +149,7 @@ public class HomeFeedSynAdapter extends AbstractThreadedSyncAdapter
                         .withValue(DbHelper.HOMEFEED_COL_USER_ID, homeModel.user_id)
                         .withValue(DbHelper.HOMEFEED_COL_TITLE, homeModel.title)
                         .withValue(DbHelper.HOMEFEED_COL_THUMBNAIL, homeModel.thumbnail)
-                        .withValue(DbHelper.HOMEFEED_COL_DESCRIPTION, homeModel.desccription)
+                        .withValue(DbHelper.HOMEFEED_COL_DESCRIPTION, homeModel.description)
                         .withValue(DbHelper.HOMEFEED_COL_SOUND_PATH, homeModel.sound_path)
                         .withValue(DbHelper.HOMEFEED_COL_DURATION, homeModel.duration)
                         .withValue(DbHelper.HOMEFEED_COL_PLAYED, homeModel.played)

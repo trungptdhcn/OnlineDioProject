@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".auth.OnlineDioAuthenticatorService">
+        <service android:name=".auth.OnlineDioAuthenticatorService_">
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator"/>
             </intent-filter>
@@ -35,7 +35,7 @@
                        android:resource="@xml/authenticator"/>
         </service>
         <service
-                android:name=".syncadapter.home.HomeFeedSynService"
+                android:name=".syncadapter.home.HomeFeedSynService_"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter"/>

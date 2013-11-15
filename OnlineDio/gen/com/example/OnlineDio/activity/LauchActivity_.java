@@ -17,7 +17,7 @@ import android.widget.Button;
 import com.example.OnlineDio.R.id;
 import com.example.OnlineDio.R.layout;
 import com.example.OnlineDio.controller.LauchController_;
-import com.example.OnlineDio.network.HomeParseFeedInService_;
+import com.example.OnlineDio.network.ParseInServer_;
 import com.googlecode.androidannotations.api.BackgroundExecutor;
 
 public final class LauchActivity_
@@ -33,7 +33,7 @@ public final class LauchActivity_
     }
 
     private void init_(Bundle savedInstanceState) {
-        homeParseFeedInService = new HomeParseFeedInService_();
+        parseInServer = new ParseInServer_();
         lauchController = LauchController_.getInstance_(this);
     }
 

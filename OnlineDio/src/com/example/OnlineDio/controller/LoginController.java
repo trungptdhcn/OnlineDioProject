@@ -12,12 +12,18 @@ import com.example.OnlineDio.activity.LoginActivity;
 import com.example.OnlineDio.activity.NavigationActivity_;
 import com.example.OnlineDio.auth.OnlineDioAccountGeneral;
 import com.example.OnlineDio.auth.User;
+import com.example.OnlineDio.network.ParseInServer;
+import com.example.OnlineDio.network.model.RequestAuthModel;
 import com.example.OnlineDio.syncadapter.DbHelper;
 import com.example.OnlineDio.syncadapter.ProviderContract;
 import com.example.OnlineDio.syncadapter.profile.ParseProfileFeedInserver;
 import com.example.OnlineDio.syncadapter.profile.ProfileFeedModel;
+import com.example.OnlineDio.utilities.Utilities;
 import com.googlecode.androidannotations.annotations.*;
+import com.googlecode.androidannotations.annotations.rest.RestService;
 import org.json.JSONException;
+
+import java.io.UnsupportedEncodingException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -41,6 +47,9 @@ public class LoginController
     LoginActivity activity;
     public final String TAG = this.getClass().getSimpleName();
 
+    @RestService
+    ParseInServer parseInServer;
+
     //    public void submit(String userName,String userPass,String accountType)
 //    {
 //        final String userName = login_edEmail.getText().toString();
@@ -49,10 +58,10 @@ public class LoginController
 //
 //        addAccountDoInBackground(userName, userPass, accountType);
 //    }
-    public void submit()
+    public void submit() throws UnsupportedEncodingException
     {
         final String userName = activity.getLogin_edEmail().getText().toString();
-        final String userPass = activity.getLogin_edPass().getText().toString();
+        final String userPass = Utilities.convertToMd5(activity.getLogin_edPass().getText().toString());
         final String accountType = OnlineDioAccountGeneral.ACCOUNT_TYPE;
         addAccountDoInBackground(userName, userPass, accountType);
     }
@@ -75,10 +84,23 @@ public class LoginController
     {
         Log.d("udinic", TAG + "> Started authenticating");
 
+
         Bundle data = new Bundle();
         try
         {
-            User user = OnlineDioAccountGeneral.sServerAuthenticate.userSignIn(userName, userPass, mAuthTokenType);
+//            JSONObject json = new JSONObject();
+//            json.put("username", userName);
+//            json.put("password", userPass);
+//            json.put("grant_type", "password");
+//            json.put("client_id", "123456789");
+            RequestAuthModel requestData = new RequestAuthModel();
+            requestData.setUsername(userName);
+            requestData.setPassword(userPass);
+            requestData.setGrant_type("password");
+            requestData.setClient_id("123456789");
+
+            User user = getUserData(requestData);
+//             = OnlineDioAccountGeneral.sServerAuthenticate.userSignIn(userName, userPass, accountType);
 
             data.putString(AccountManager.KEY_ACCOUNT_NAME, userName);
             data.putString(AccountManager.KEY_ACCOUNT_TYPE, accountType);
@@ -179,6 +201,12 @@ public class LoginController
         {
             e.printStackTrace();
         }
+    }
 
+    User getUserData(RequestAuthModel requestData)
+    {
+        User user = parseInServer.userSignIn(requestData);
+
+        return user;
     }
 }

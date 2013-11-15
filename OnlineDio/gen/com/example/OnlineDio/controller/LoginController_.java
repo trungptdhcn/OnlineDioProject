@@ -13,6 +13,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import com.example.OnlineDio.activity.LoginActivity;
+import com.example.OnlineDio.network.ParseInServer_;
 import com.googlecode.androidannotations.api.BackgroundExecutor;
 
 public final class LoginController_
@@ -48,6 +49,7 @@ public final class LoginController_
             Activity activity = ((Activity) context_);
         }
         mAccountManager = ((AccountManager) context_.getSystemService(Context.ACCOUNT_SERVICE));
+        parseInServer = new ParseInServer_();
         if (context_ instanceof LoginActivity) {
             activity = ((LoginActivity) context_);
         }
@@ -81,14 +83,14 @@ public final class LoginController_
     }
 
     @Override
-    public void getInforProfileAccount(final String user_id, final String athToken) {
+    public void addAccountDoInBackground(final String userName, final String userPass, final String accountType) {
         BackgroundExecutor.execute(new Runnable() {
 
 
             @Override
             public void run() {
                 try {
-                    LoginController_.super.getInforProfileAccount(user_id, athToken);
+                    LoginController_.super.addAccountDoInBackground(userName, userPass, accountType);
                 } catch (RuntimeException e) {
                     Log.e("LoginController_", "A runtime exception was thrown while executing code in a runnable", e);
                 }
@@ -99,14 +101,14 @@ public final class LoginController_
     }
 
     @Override
-    public void addAccountDoInBackground(final String userName, final String userPass, final String accountType) {
+    public void getInforProfileAccount(final String user_id, final String athToken) {
         BackgroundExecutor.execute(new Runnable() {
 
 
             @Override
             public void run() {
                 try {
-                    LoginController_.super.addAccountDoInBackground(userName, userPass, accountType);
+                    LoginController_.super.getInforProfileAccount(user_id, athToken);
                 } catch (RuntimeException e) {
                     Log.e("LoginController_", "A runtime exception was thrown while executing code in a runnable", e);
                 }

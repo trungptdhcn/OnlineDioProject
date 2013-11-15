@@ -1,5 +1,8 @@
 package com.example.OnlineDio.syncadapter.home;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonProperty;
+
 import java.util.ArrayList;
 
 /**
@@ -9,19 +12,57 @@ import java.util.ArrayList;
  * Time: 14:31
  * To change this template use File | Settings | File Templates.
  */
-//@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class HomeFeedContainer
 {
-    ArrayList<HomeFeedModel> homeFeedModels;
+    //    ArrayList<HomeFeedModel> homeFeedModels;
+//
+////    @JsonValue
+//    public ArrayList<HomeFeedModel> getHomeFeedModels()
+//    {
+//        return homeFeedModels;
+//    }
+////    @JsonCreator
+//    public void setHomeFeedModels(ArrayList<HomeFeedModel> homeFeedModels)
+//    {
+//        this.homeFeedModels = homeFeedModels;
+//    }
+    @JsonProperty("code")
+    public int code;
 
-//    @JsonValue
-    public ArrayList<HomeFeedModel> getHomeFeedModels()
+    @JsonProperty("status")
+    public String status;
+
+    @JsonProperty("data")
+    public ArrayList<HomeFeedModel> data;
+
+    public int getCode()
+{
+    return code;
+}
+
+    public void setCode(int code)
     {
-        return homeFeedModels;
+        this.code = code;
     }
-//    @JsonCreator
-    public void setHomeFeedModels(ArrayList<HomeFeedModel> homeFeedModels)
+
+    public String getStatus()
     {
-        this.homeFeedModels = homeFeedModels;
+        return status;
+    }
+
+    public void setStatus(String status)
+    {
+        this.status = status;
+    }
+
+    public ArrayList<HomeFeedModel> getData()
+    {
+        return data;
+    }
+
+    public void setData(ArrayList<HomeFeedModel> data)
+    {
+        this.data = data;
     }
 }

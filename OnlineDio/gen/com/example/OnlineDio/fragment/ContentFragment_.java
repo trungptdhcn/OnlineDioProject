@@ -31,12 +31,12 @@ public final class ContentFragment_
     }
 
     private void afterSetContentView_() {
-        content_rbDetail = ((RadioButton) findViewById(com.example.OnlineDio.R.id.content_rbDetail));
         content_btnPlay = ((ImageButton) findViewById(com.example.OnlineDio.R.id.content_btnPlay));
         content_rbComment = ((RadioButton) findViewById(com.example.OnlineDio.R.id.content_rbComment));
-        content_rbThumbnail = ((RadioButton) findViewById(com.example.OnlineDio.R.id.content_rbThumbnail));
-        content_btBack = ((ImageButton) findViewById(com.example.OnlineDio.R.id.content_btBack));
         content_imgAvatar = ((CircularImageView) findViewById(com.example.OnlineDio.R.id.content_imgAvatar));
+        content_btBack = ((ImageButton) findViewById(com.example.OnlineDio.R.id.content_btBack));
+        content_rbThumbnail = ((RadioButton) findViewById(com.example.OnlineDio.R.id.content_rbThumbnail));
+        content_rbDetail = ((RadioButton) findViewById(com.example.OnlineDio.R.id.content_rbDetail));
         {
             View view = findViewById(com.example.OnlineDio.R.id.content_btnPlay);
             if (view!= null) {
